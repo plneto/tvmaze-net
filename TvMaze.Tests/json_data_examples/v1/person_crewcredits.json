@@ -1,0 +1,26 @@
+[
+    {
+        "type": "Co-Executive Producer",
+        "_links": {
+            "show": {
+                "href": "http://api.tvmaze.com/shows/2"
+            }
+        }
+    },
+    {
+        "type": "Consulting Producer",
+        "_links": {
+            "show": {
+                "href": "http://api.tvmaze.com/shows/231"
+            }
+        }
+    },
+    {
+        "type": "Supervising Producer",
+        "_links": {
+            "show": {
+                "href": "http://api.tvmaze.com/shows/1153"
+            }
+        }
+    }
+]

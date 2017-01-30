@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Под куполом",
+        "country": {
+            "name": "Russian Federation",
+            "code": "RU",
+            "timezone": "Asia/Magadan"
+        }
+    },
+    {
+        "name": "A búra alatt",
+        "country": {
+            "name": "Hungary",
+            "code": "HU",
+            "timezone": "Europe/Budapest"
+        }
+    }
+]

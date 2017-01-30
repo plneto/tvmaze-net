@@ -1,0 +1,58 @@
+{
+    "id": 1,
+    "url": "http://www.tvmaze.com/people/1/mike-vogel",
+    "name": "Mike Vogel",
+    "image": {
+        "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/0/1815.jpg",
+        "original": "http://tvmazecdn.com/uploads/images/original_untouched/0/1815.jpg"
+    },
+    "_links": {
+        "self": {
+            "href": "http://api.tvmaze.com/people/1"
+        }
+    },
+    "_embedded": {
+        "castcredits": [
+            {
+                "_links": {
+                    "show": {
+                        "href": "http://api.tvmaze.com/shows/1"
+                    },
+                    "character": {
+                        "href": "http://api.tvmaze.com/characters/1"
+                    }
+                }
+            },
+            {
+                "_links": {
+                    "show": {
+                        "href": "http://api.tvmaze.com/shows/942"
+                    },
+                    "character": {
+                        "href": "http://api.tvmaze.com/characters/89565"
+                    }
+                }
+            },
+            {
+                "_links": {
+                    "show": {
+                        "href": "http://api.tvmaze.com/shows/2942"
+                    },
+                    "character": {
+                        "href": "http://api.tvmaze.com/characters/164406"
+                    }
+                }
+            },
+            {
+                "_links": {
+                    "show": {
+                        "href": "http://api.tvmaze.com/shows/4730"
+                    },
+                    "character": {
+                        "href": "http://api.tvmaze.com/characters/176889"
+                    }
+                }
+            }
+        ]
+    }
+}

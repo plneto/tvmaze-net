@@ -1,0 +1,195 @@
+[
+    {
+        "type": "Co-Executive Producer",
+        "_links": {
+            "show": {
+                "href": "http://api.tvmaze.com/shows/2"
+            }
+        },
+        "_embedded": {
+            "show": {
+                "id": 2,
+                "url": "http://www.tvmaze.com/shows/2/person-of-interest",
+                "name": "Person of Interest",
+                "type": "Scripted",
+                "language": "English",
+                "genres": [
+                    "Drama",
+                    "Action",
+                    "Crime",
+                    "Science-Fiction",
+                    "Thriller",
+                    "Mystery"
+                ],
+                "status": "Ended",
+                "runtime": 60,
+                "premiered": "2011-09-22",
+                "schedule": {
+                    "time": "22:00",
+                    "days": [
+                        "Tuesday"
+                    ]
+                },
+                "rating": {
+                    "average": 9.1
+                },
+                "weight": 4,
+                "network": {
+                    "id": 2,
+                    "name": "CBS",
+                    "country": {
+                        "name": "United States",
+                        "code": "US",
+                        "timezone": "America/New_York"
+                    }
+                },
+                "webChannel": null,
+                "externals": {
+                    "tvrage": 28376,
+                    "thetvdb": 248742,
+                    "imdb": "tt1839578"
+                },
+                "image": {
+                    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/55/137682.jpg",
+                    "original": "http://tvmazecdn.com/uploads/images/original_untouched/55/137682.jpg"
+                },
+                "summary": "<p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \"irrelevant.\" They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>",
+                "updated": 1473709038,
+                "_links": {
+                    "self": {
+                        "href": "http://api.tvmaze.com/shows/2"
+                    },
+                    "previousepisode": {
+                        "href": "http://api.tvmaze.com/episodes/659372"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "Consulting Producer",
+        "_links": {
+            "show": {
+                "href": "http://api.tvmaze.com/shows/231"
+            }
+        },
+        "_embedded": {
+            "show": {
+                "id": 231,
+                "url": "http://www.tvmaze.com/shows/231/vegas",
+                "name": "Vegas",
+                "type": "Scripted",
+                "language": "English",
+                "genres": [
+                    "Drama"
+                ],
+                "status": "Ended",
+                "runtime": 60,
+                "premiered": "2012-09-25",
+                "schedule": {
+                    "time": "21:00",
+                    "days": [
+                        "Friday"
+                    ]
+                },
+                "rating": {
+                    "average": 7.6
+                },
+                "weight": 0,
+                "network": {
+                    "id": 2,
+                    "name": "CBS",
+                    "country": {
+                        "name": "United States",
+                        "code": "US",
+                        "timezone": "America/New_York"
+                    }
+                },
+                "webChannel": null,
+                "externals": {
+                    "tvrage": 31701,
+                    "thetvdb": 259091,
+                    "imdb": "tt2262383"
+                },
+                "image": {
+                    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/1/3781.jpg",
+                    "original": "http://tvmazecdn.com/uploads/images/original_untouched/1/3781.jpg"
+                },
+                "summary": "<p>VEGAS is a drama inspired by the true story of former Las Vegas Sheriff Ralph Lamb, a fourth-generation rancher tasked with bringing order to Las Vegas in the 1960s, a gambling and entertainment mecca emerging from the tumbleweeds. Ralph Lamb wants to be left in peace to run his ranch, but Las Vegas is now swelling with outsiders and corruption which are intruding on his simple life. Recalling Lamb's command as a military police officer during World War II, the Mayor appeals to his sense of duty to look into a murder of a casino worker - and so begins Lamb's clash with Vincent Savino, a ruthless Chicago gangster who plans to make Vegas his own. Assisting Lamb in keeping law and order are his two deputies: his diplomatic, even-keeled brother Jack and his charming but impulsive son Dixon. Ambitious Assistant District Attorney Katherine O'Connell, who grew up on the ranch next to the Lambs, also lends a hand in preserving justice. In Vegas, two powerful men - Lamb and Savino - are engaged in a fierce battle for control of the budding oasis, and for both of them, folding is not an option. </p>",
+                "updated": 1469285683,
+                "_links": {
+                    "self": {
+                        "href": "http://api.tvmaze.com/shows/231"
+                    },
+                    "previousepisode": {
+                        "href": "http://api.tvmaze.com/episodes/14636"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "type": "Supervising Producer",
+        "_links": {
+            "show": {
+                "href": "http://api.tvmaze.com/shows/1153"
+            }
+        },
+        "_embedded": {
+            "show": {
+                "id": 1153,
+                "url": "http://www.tvmaze.com/shows/1153/new-amsterdam",
+                "name": "New Amsterdam",
+                "type": "Scripted",
+                "language": "English",
+                "genres": [
+                    "Drama",
+                    "Crime",
+                    "Fantasy"
+                ],
+                "status": "Ended",
+                "runtime": 60,
+                "premiered": "2008-03-04",
+                "schedule": {
+                    "time": "21:00",
+                    "days": [
+                        "Monday"
+                    ]
+                },
+                "rating": {
+                    "average": 8.3
+                },
+                "weight": 0,
+                "network": {
+                    "id": 4,
+                    "name": "FOX",
+                    "country": {
+                        "name": "United States",
+                        "code": "US",
+                        "timezone": "America/New_York"
+                    }
+                },
+                "webChannel": null,
+                "externals": {
+                    "tvrage": 15745,
+                    "thetvdb": 80481,
+                    "imdb": "tt0928414"
+                },
+                "image": {
+                    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/6/17370.jpg",
+                    "original": "http://tvmazecdn.com/uploads/images/original_untouched/6/17370.jpg"
+                },
+                "summary": "<p><strong><em>\"New Amsterdam\"</em></strong> centers on a brilliant New York homicide detective with a profound secret he is immortal. In response to a heroic action, John Amsterdam will not age a day until he finds \"the one.\" He has had many lives as he has roamed the city of New York for the past 400 years searching for his one true love.</p>",
+                "updated": 1463947592,
+                "_links": {
+                    "self": {
+                        "href": "http://api.tvmaze.com/shows/1153"
+                    },
+                    "previousepisode": {
+                        "href": "http://api.tvmaze.com/episodes/106311"
+                    }
+                }
+            }
+        }
+    }
+]
