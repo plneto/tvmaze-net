@@ -12,7 +12,10 @@ namespace TvMaze.Domain {
         Character,
 
         [Description("previousepisode")]
-        PreviousEpisode
-        
+        PreviousEpisode,
+
+        [Description("nextepisode")]
+        NextEpisode
+
     }
 }

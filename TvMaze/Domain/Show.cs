@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TvMaze.Domain {
     /// <summary>
@@ -13,31 +14,19 @@ namespace TvMaze.Domain {
         public string Language { get; set; }
         public string[] Genres { get; set; }
         public string Status { get; set; }
-        public int Runtime { get; set; }
-        public DateTime Premiered { get; set; }
-        // TODO
-        /*
-          "schedule": {
-            "time": "22:00",
-            "days": [
-              "Thursday"
-            ]
-          },
-         */
-        public string Schedule { get; set; }
-        // TODO
-        /*
-         "rating": {
-            "average": 6.6
-          },
-         */
-        public decimal Rating { get; set; }
+        public int? Runtime { get; set; }
+        public DateTime? Premiered { get; set; }
+        public ShowSchedule Schedule { get; set; }
+        public Rating Rating { get; set; }
         public int Weight { get; set; }
         public Network Network { get; set; }
-        public string WebChannel { get; set; }
-        public IDictionary<string, string> ExternalIds { get; set; }
-        public IDictionary<string, string> Image { get; set; }
+        public WebChannel WebChannel { get; set; }
+        public IDictionary<string, string> Externals { get; set; }
+        public IDictionary<ImageType, string> Image { get; set; }
         public string Summary { get; set; }
         public int Updated { get; set; }
+        [JsonProperty(PropertyName = "_links")]
+        public IDictionary<LinkType, Link> Links { get; set; }
+        public IList<Cast> Casts { get; set; }
     }
 }

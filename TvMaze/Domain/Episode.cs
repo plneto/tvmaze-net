@@ -25,12 +25,12 @@ namespace TvMaze.Domain {
         /// <summary>
         /// Episode season number
         /// </summary>
-        public byte Season { get; set; }
+        public int Season { get; set; }
 
         /// <summary>
         /// Episode ordinal number in season
         /// </summary>
-        public ushort Number { get; set; }
+        public int? Number { get; set; }
 
         /// <summary>
         /// Episode air date
@@ -55,7 +55,7 @@ namespace TvMaze.Domain {
         /// <summary>
         /// Episode duration in minutes - runtime
         /// </summary>
-        public int RunTime { get; set; }
+        public int? RunTime { get; set; }
         public IDictionary<ImageType, string> Image { get; set; }
 
         /// <summary>
@@ -65,5 +65,7 @@ namespace TvMaze.Domain {
 
         [JsonProperty(PropertyName = "_links")]
         public IDictionary<LinkType, Link>  Links { get; set; }
+
+        public Show Show { get; set; }
     }
 }

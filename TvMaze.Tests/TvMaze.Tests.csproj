@@ -64,24 +64,54 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="json_data_examples\v1\alias.json" />
-    <None Include="json_data_examples\v1\cast.json" />
+    <None Include="json_data_examples\v1\alias.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\cast.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="json_data_examples\v1\episode.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="json_data_examples\v1\episodes.json" />
-    <None Include="json_data_examples\v1\person.json" />
-    <None Include="json_data_examples\v1\person_castcredits.json" />
-    <None Include="json_data_examples\v1\person_castcredits_embed_show.json" />
-    <None Include="json_data_examples\v1\person_crewcredits.json" />
-    <None Include="json_data_examples\v1\person_crewcredits_embed_show.json" />
-    <None Include="json_data_examples\v1\person_embed_castcredits.json" />
-    <None Include="json_data_examples\v1\schedule.json" />
-    <None Include="json_data_examples\v1\search_people.json" />
-    <None Include="json_data_examples\v1\search_show.json" />
-    <None Include="json_data_examples\v1\seasons.json" />
-    <None Include="json_data_examples\v1\show.json" />
-    <None Include="json_data_examples\v1\show_embed_cast.json" />
+    <None Include="json_data_examples\v1\episodes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\person.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\person_castcredits.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\person_castcredits_embed_show.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\person_crewcredits.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\person_crewcredits_embed_show.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\person_embed_castcredits.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\schedule.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\search_people.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\search_show.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\seasons.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\show.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="json_data_examples\v1\show_embed_cast.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
