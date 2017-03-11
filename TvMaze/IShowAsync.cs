@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TvMaze.Domain;
 
 namespace TvMaze {
     /// <summary>
     /// Show interface
     /// </summary>
-    public interface IShow {
+    public interface IShowAsync {
 
         /// <summary>
-        /// Retreive all primary information for a given show
+        /// Retreive all primary information for a given hsow
         /// with possible embedding of additional information.
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>Show info</returns>
-        Show GetShow(string showId, EmbedType? embed = null);
+        Task<Show> GetShowAsync(string showId, EmbedType? embed = null);
 
         /// <summary>
         /// Gets a complete list of episodes for the given show.
@@ -27,7 +28,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="includeSpecials">True to include special episodes, otherwise false. Default is true.</param>
         /// <returns>Epiodes list</returns>
-        IEnumerable<Episode> GetShowEpisodeList(string showId, bool includeSpecials = true);
+        Task<IEnumerable<Episode>> GetShowEpisodeListAsync(string showId, bool includeSpecials = true);
 
         /// <summary>
         /// Retreive one specific episode from particular show given
@@ -37,7 +38,7 @@ namespace TvMaze {
         /// <param name="season">Season number</param>
         /// <param name="episodeNumber">Episode number</param>
         /// <returns>Specific episode</returns>
-        Episode GetShowEpisode(string showId, string season, string episodeNumber);
+        Task<Episode> GetShowEpisodeAsync(string showId, string season, string episodeNumber);
 
         /// <summary>
         /// Retreive all episodes from particular show that have aired on a specific date.
@@ -45,7 +46,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="airDate">Air date</param>
         /// <returns>List of epiodes of particular show</returns>
-        IEnumerable<Episode> GetShowEpisodes(string showId, DateTime airDate);
+        Task<IEnumerable<Episode>> GetShowEpisodesAsync(string showId, DateTime airDate);
 
         /// <summary>
         /// Gets a complete list of seasons for the given show.
@@ -54,7 +55,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>Coplete list of seasons for the given show</returns>
-        IEnumerable<Season> GetShowSeasons(string showId);
+        Task<IEnumerable<Season>> GetShowSeasonsAsync(string showId);
 
         /// <summary>
         /// Gets a list of main cast for a show.
@@ -64,21 +65,21 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>List of main cast for a show</returns>
-        IEnumerable<Cast> GetShowCast(string showId);
+        Task<IEnumerable<Cast>> GetShowCastAsync(string showId);
 
         /// <summary>
         /// A list of main crew for a show. Each crew item is a combination of a person and their crew type.
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>A list of main crew for a show.</returns>
-        IEnumerable<Crew> GetShowCrew(string showId);
+        Task<IEnumerable<Crew>> GetShowCrewAsync(string showId);
 
         /// <summary>
         /// Gets a list of aliases for a show.
         /// </summary>
         /// <param name="showId"></param>
         /// <returns>A list of aliases for a show</returns>
-        IEnumerable<Alias> GetShowAliases(string showId);
+        Task<IEnumerable<Alias>> GetShowAliasesAsync(string showId);
 
         /// <summary>
         /// Gets a list of all shows in TvMaze database with all primary information included.
@@ -90,14 +91,14 @@ namespace TvMaze {
         /// </summary>
         /// <param name="pageNumber"></param>
         /// <returns>A list of all shows</returns>
-        IEnumerable<Show> GetAllShows(int pageNumber = 0);
+        Task<IEnumerable<Show>> GetAllShowsAsync(int pageNumber = 0);
 
         /// <summary>
         /// Gets a list of all shows in the TvMaze database and the timestap when they
         /// were last updated.
         /// </summary>
         /// <returns>List of all updated shows</returns>
-        IEnumerable<ShowUpdate> GetShowUpdates();
+        Task<IEnumerable<ShowUpdate>> GetShowUpdatesAsync();
 
     }
 }

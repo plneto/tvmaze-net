@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using TvMaze.Domain;
 
 namespace TvMaze {
     /// <summary>
     /// People interface
     /// </summary>
-    public interface IPeople {
+    public interface IPeopleAsync {
 
         /// <summary>
         /// Retreive all primary information for a given person with
@@ -14,7 +15,7 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All primary information for a given person with possible embedding of additional information</returns>
-        Person GetPersonInfo(string personId, EmbedType embed);
+        Task<Person> GetPersonInfoAsync(string personId, EmbedType embed);
 
         /// <summary>
         /// Retreive all cast credits for a person. 
@@ -23,7 +24,7 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All cast credits for a person</returns>
-        IEnumerable<CastCredit> GetCastCredits(string personId, EmbedType embed);
+        Task<IEnumerable<CastCredit>> GetCastCreditsAsync(string personId, EmbedType embed);
 
         /// <summary>
         /// Retreive all crew credits for a person.
@@ -32,7 +33,6 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All crew credits for a person</returns>
-        IEnumerable<CrewCredit> GetCrewCredits(string personId, EmbedType embed);
-
+        Task<IEnumerable<CrewCredit>> GetCrewCreditsAsync(string personId, EmbedType embed);
     }
 }

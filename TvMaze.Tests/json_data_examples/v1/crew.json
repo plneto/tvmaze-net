@@ -1,0 +1,299 @@
+[
+    {
+        "type": "Creator",
+        "person": {
+            "id": 15,
+            "url": "http://www.tvmaze.com/people/15/stephen-king",
+            "name": "Stephen King",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1813.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1813.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/15" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 15,
+            "url": "http://www.tvmaze.com/people/15/stephen-king",
+            "name": "Stephen King",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1813.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1813.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/15" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 16,
+            "url": "http://www.tvmaze.com/people/16/steven-spielberg",
+            "name": "Steven Spielberg",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/25/64101.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/25/64101.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/16" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 17,
+            "url": "http://www.tvmaze.com/people/17/jack-bender",
+            "name": "Jack Bender",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/17" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 18,
+            "url": "http://www.tvmaze.com/people/18/stacey-snider",
+            "name": "Stacey Snider",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/18" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 19,
+            "url": "http://www.tvmaze.com/people/19/neal-baer",
+            "name": "Neal Baer",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/17/44163.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/17/44163.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/19" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 20,
+            "url": "http://www.tvmaze.com/people/20/darryl-frank",
+            "name": "Darryl Frank",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/52/132424.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/52/132424.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/20" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 21,
+            "url": "http://www.tvmaze.com/people/21/justin-falvey",
+            "name": "Justin Falvey",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/52/132425.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/52/132425.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/21" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 22,
+            "url": "http://www.tvmaze.com/people/22/brian-k-vaughan",
+            "name": "Brian K. Vaughan",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/96/240765.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/96/240765.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/22" } }
+        }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "person": {
+            "id": 23,
+            "url": "http://www.tvmaze.com/people/23/peter-leto",
+            "name": "Peter Leto",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/23" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 23,
+            "url": "http://www.tvmaze.com/people/23/peter-leto",
+            "name": "Peter Leto",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/23" } }
+        }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "person": {
+            "id": 24,
+            "url": "http://www.tvmaze.com/people/24/rick-cleveland",
+            "name": "Rick Cleveland",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/24" } }
+        }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "person": {
+            "id": 25,
+            "url": "http://www.tvmaze.com/people/25/cathryn-humphris",
+            "name": "Cathryn Humphris",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/25" } }
+        }
+    },
+    {
+        "type": "Supervising Producer",
+        "person": {
+            "id": 25,
+            "url": "http://www.tvmaze.com/people/25/cathryn-humphris",
+            "name": "Cathryn Humphris",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/25" } }
+        }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "person": {
+            "id": 26,
+            "url": "http://www.tvmaze.com/people/26/alexandra-mcnally",
+            "name": "Alexandra McNally",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/26" } }
+        }
+    },
+    {
+        "type": "Supervising Producer",
+        "person": {
+            "id": 26,
+            "url": "http://www.tvmaze.com/people/26/alexandra-mcnally",
+            "name": "Alexandra McNally",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/26" } }
+        }
+    },
+    {
+        "type": "Co-Producer",
+        "person": {
+            "id": 27,
+            "url": "http://www.tvmaze.com/people/27/soo-hugh",
+            "name": "Soo Hugh",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/27" } }
+        }
+    },
+    {
+        "type": "Co-Producer",
+        "person": {
+            "id": 28,
+            "url": "http://www.tvmaze.com/people/28/agatha-warren",
+            "name": "Agatha Warren",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/28" } }
+        }
+    },
+    {
+        "type": "Consulting Producer",
+        "person": {
+            "id": 29,
+            "url": "http://www.tvmaze.com/people/29/daniel-truly",
+            "name": "Daniel Truly",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/29" } }
+        }
+    },
+    {
+        "type": "Consulting Producer",
+        "person": {
+            "id": 30,
+            "url": "http://www.tvmaze.com/people/30/kelly-souders",
+            "name": "Kelly Souders",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/94/235643.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/94/235643.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/30" } }
+        }
+    },
+    {
+        "type": "Consulting Producer",
+        "person": {
+            "id": 31,
+            "url": "http://www.tvmaze.com/people/31/brian-peterson",
+            "name": "Brian Peterson",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/31" } }
+        }
+    },
+    {
+        "type": "Associate Producer",
+        "person": {
+            "id": 32,
+            "url": "http://www.tvmaze.com/people/32/richard-peter-schroer",
+            "name": "Richard Peter Schroer",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/32" } }
+        }
+    },
+    {
+        "type": "Associate Producer",
+        "person": {
+            "id": 33,
+            "url": "http://www.tvmaze.com/people/33/darian-heredia",
+            "name": "Darian Heredia",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/33" } }
+        }
+    },
+    {
+        "type": "Supervising Producer",
+        "person": {
+            "id": 56,
+            "url": "http://www.tvmaze.com/people/56/adam-stein",
+            "name": "Adam Stein",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/56" } }
+        }
+    },
+    {
+        "type": "Supervising Producer",
+        "person": {
+            "id": 66,
+            "url": "http://www.tvmaze.com/people/66/peter-calloway",
+            "name": "Peter Calloway",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/66" } }
+        }
+    },
+    {
+        "type": "Executive Producer",
+        "person": {
+            "id": 29743,
+            "url": "http://www.tvmaze.com/people/29743/tim-schlattmann",
+            "name": "Tim Schlattmann",
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/29743" } }
+        }
+    },
+    {
+        "type": "Co-Producer",
+        "person": {
+            "id": 35384,
+            "url": "http://www.tvmaze.com/people/35384/bronwyn-garrity",
+            "name": "Bronwyn Garrity",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/29/72933.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/29/72933.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/35384" } }
+        }
+    }
+]

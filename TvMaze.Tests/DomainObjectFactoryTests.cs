@@ -19,10 +19,9 @@ namespace TvMaze.Tests {
         public void CreateEpisode_ValidEpisodeJsonData_EpisodeInstance() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "episode.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var episode = factory.CreateEpisode(json);
+            var episode = DomainObjectFactory.CreateEpisode(json);
 
             // Assert
             Assert.IsNotNull(episode);
@@ -54,10 +53,9 @@ namespace TvMaze.Tests {
         public void CreateEpisodes_ValidEpisodesJsonData_EpisodeInstanceList() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "episodes.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var episodes = factory.CreateEpisodes(json);
+            var episodes = DomainObjectFactory.CreateEpisodes(json);
 
             // Assert
             Assert.IsNotNull(episodes);
@@ -89,13 +87,52 @@ namespace TvMaze.Tests {
         }
 
         [Test]
+        public void CreateSeasons_ValidSeasonsJsonData_SeasonInstanceList() {
+            // Arrange
+            var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "seasons.json"));
+
+            // Act
+            var seasons = DomainObjectFactory.CreateSeasons(json);
+
+            // Assert
+            Assert.IsNotNull(seasons);
+            Assert.IsNotEmpty(seasons);
+
+            var season = seasons[0];
+            Assert.IsNotNull(season);
+            Assert.AreEqual(1, season.Id);
+            Assert.AreEqual("http://www.tvmaze.com/seasons/1/under-the-dome-season-1", season.Url);
+            Assert.AreEqual(1, season.Number);
+            Assert.IsEmpty(season.Name);
+            Assert.AreEqual(13, season.EpisodeOrder);
+            Assert.AreEqual(new DateTime(2013, 06, 24), season.PremiereDate);
+            Assert.AreEqual(new DateTime(2013, 09, 16), season.EndDate);
+            Assert.IsNotNull(season.Network);
+            Assert.AreEqual(2, season.Network.Id);
+            Assert.AreEqual("CBS", season.Network.Name);
+            Assert.AreEqual("United States", season.Network.Country.Name);
+            Assert.AreEqual("US", season.Network.Country.Code);
+            Assert.AreEqual("America/New_York", season.Network.Country.Timezone);
+            Assert.IsNull(season.WebChannel);
+            Assert.AreEqual(2, season.Image.Count);
+            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_portrait/24/60941.jpg",
+                season.Image[ImageType.Medium]);
+            Assert.AreEqual("http://tvmazecdn.com/uploads/images/original_untouched/24/60941.jpg",
+                season.Image[ImageType.Original]);
+            Assert.IsEmpty(season.Summary);
+            Assert.AreEqual(1, season.Links.Count);
+            Assert.AreEqual("http://api.tvmaze.com/seasons/1", season.Links[LinkType.Self].Href);
+
+
+        }
+
+        [Test]
         public void CreatePerson_ValidPersonJsonData_PersonInstance() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "person.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var person = factory.CreatePerson(json);
+            var person = DomainObjectFactory.CreatePerson(json);
 
             // Assert
             Assert.IsNotNull(person);
@@ -113,10 +150,9 @@ namespace TvMaze.Tests {
         public void CreatePerson_ValidPersonJsonDataWithCastCredits_PersonInstanceWithCastCredits() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "person_embed_castcredits.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var person = factory.CreatePerson(json);
+            var person = DomainObjectFactory.CreatePerson(json);
 
             // Assert
             Assert.IsNotNull(person);
@@ -135,10 +171,9 @@ namespace TvMaze.Tests {
         public void CreateShow_ValidShowJsonData_ShowInstance() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "show.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var show = factory.CreateShow(json);
+            var show = DomainObjectFactory.CreateShow(json);
 
             // Assert
             Assert.IsNotNull(show);
@@ -184,14 +219,89 @@ namespace TvMaze.Tests {
 
         }
 
+
+        [Test]
+        public void CreateShows_ValidShowsJsonData_ShowInstanceList() {
+            // Arrange
+            var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "shows.json"));
+
+            // Act
+            var shows = DomainObjectFactory.CreateShows(json);
+
+            // Assert
+            Assert.IsNotNull(shows);
+            Assert.IsNotEmpty(shows);
+
+            var show = shows[0];
+            Assert.IsNotNull(show);
+            Assert.AreEqual(1, show.Id);
+            Assert.AreEqual("http://www.tvmaze.com/shows/1/under-the-dome", show.Url);
+            Assert.AreEqual("Under the Dome", show.Name);
+            Assert.AreEqual("Scripted", show.Type);
+            Assert.AreEqual("English", show.Language);
+            Assert.Contains("Drama", show.Genres);
+            Assert.Contains("Science-Fiction", show.Genres);
+            Assert.Contains("Thriller", show.Genres);
+            Assert.AreEqual("Ended", show.Status);
+            Assert.AreEqual(60, show.Runtime);
+            Assert.AreEqual(new DateTime(2013, 06, 24), show.Premiered);
+            Assert.AreEqual("22:00", show.Schedule.Time);
+            Assert.Contains("Thursday", show.Schedule.Days);
+            Assert.AreEqual(6.6f, show.Rating.Average);
+            Assert.AreEqual(2, show.Weight);
+            Assert.AreEqual(2, show.Network.Id);
+            Assert.AreEqual("CBS", show.Network.Name);
+            Assert.AreEqual("United States", show.Network.Country.Name);
+            Assert.AreEqual("US", show.Network.Country.Code);
+            Assert.AreEqual("America/New_York", show.Network.Country.Timezone);
+            Assert.IsNull(show.WebChannel);
+            Assert.IsNotNull(show.Externals);
+            Assert.IsNotEmpty(show.Externals);
+            Assert.IsTrue(show.Externals.ContainsKey("tvrage"));
+            Assert.AreEqual("25988", show.Externals["tvrage"]);
+            Assert.IsTrue(show.Externals.ContainsKey("thetvdb"));
+            Assert.AreEqual("264492", show.Externals["thetvdb"]);
+            Assert.IsTrue(show.Externals.ContainsKey("imdb"));
+            Assert.AreEqual("tt1553656", show.Externals["imdb"]);
+            Assert.IsNotEmpty(show.Image);
+            Assert.IsTrue(show.Image.ContainsKey(ImageType.Medium));
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
+            Assert.IsTrue(show.Image.ContainsKey(ImageType.Original));
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
+            Assert.AreEqual("<p><strong>Under the Dome</strong> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+                show.Summary);
+            Assert.AreEqual(1488136720, show.Updated);
+
+            Assert.IsNull(show.Casts);
+
+        }
+
+        [Test]
+        public void CreateShowUpdates_ValidShowUpdatesJsonData_ShowUpdateInstanceList() {
+            // Arrange
+            var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "show_updates.json"));
+
+            // Act
+            var showUpdates = DomainObjectFactory.CreateShowUpdates(json);
+
+            // Assert
+            Assert.IsNotNull(showUpdates);
+            Assert.IsNotEmpty(showUpdates);
+
+            var showUpdate = showUpdates[0];
+            Assert.AreEqual("1", showUpdate.ShowId);
+            Assert.AreEqual(1488136720, showUpdate.Timestamp);
+            Assert.AreEqual(DateTimeOffset.Parse("2017-02-26T19:18:40+00:00"), showUpdate.DateTimeOffset);
+
+        }
+
         [Test]
         public void CreateShow_ValidShowJsonDataWithEmbedCast_ShowInstance() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "show_embed_cast.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var show = factory.CreateShow(json);
+            var show = DomainObjectFactory.CreateShow(json);
 
             // Assert
             Assert.IsNotNull(show);
@@ -242,10 +352,9 @@ namespace TvMaze.Tests {
         public void CreatePeopleSearchResults_ValidSearchPeopleJsonData_PersonSearchResults() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "search_people.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var searchResults = factory.CreatePeopleSearchResults(json);
+            var searchResults = DomainObjectFactory.CreatePeopleSearchResults(json);
 
             // Assert
             Assert.IsNotNull(searchResults);
@@ -264,10 +373,9 @@ namespace TvMaze.Tests {
         public void CreateShowSearchResults_ValidSearchShowJsonData_ShowSearchResults() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "search_show.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var searchResults = factory.CreateShowSearchResults(json);
+            var searchResults = DomainObjectFactory.CreateShowSearchResults(json);
 
             // Assert
             Assert.IsNotNull(searchResults);
@@ -285,13 +393,12 @@ namespace TvMaze.Tests {
         }
 
         [Test]
-        public void CreateSechedule_ValidScheduleJsonData_ScheduleList() {
+        public void CreateSchedule_ValidScheduleJsonData_ScheduleList() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "schedule.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var schedule = factory.CreateSchedule(json);
+            var schedule = DomainObjectFactory.CreateSchedule(json);
 
             // Assert
             Assert.IsNotNull(schedule);
@@ -308,10 +415,9 @@ namespace TvMaze.Tests {
         public void CreateCast_ValidCastJsonData_CastList() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "cast.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var casts = factory.CreateCasts(json);
+            var casts = DomainObjectFactory.CreateCasts(json);
 
             // Assert
             Assert.IsNotNull(casts);
@@ -325,13 +431,30 @@ namespace TvMaze.Tests {
         }
 
         [Test]
+        public void CreateCrew_ValidCrewJsonData_CrewList() {
+            // Arrange
+            var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "crew.json"));
+
+            // Act
+            var crews = DomainObjectFactory.CreateCrews(json);
+
+            // Assert
+            Assert.IsNotNull(crews);
+            Assert.IsNotEmpty(crews);
+
+            var crew = crews[0];
+            Assert.AreEqual("Creator", crew.Type);
+            Assert.AreEqual(15, crew.Person.Id);
+            Assert.AreEqual("Stephen King", crew.Person.Name);
+        }
+
+        [Test]
         public void CreateAliases_ValidAliasJsonData_AliasList() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "alias.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var aliases = factory.CreateAliases(json);
+            var aliases = DomainObjectFactory.CreateAliases(json);
 
             // Assert
             Assert.IsNotNull(aliases);
@@ -348,10 +471,9 @@ namespace TvMaze.Tests {
         public void CreateCastCredits_ValidCastCreditJsonData_CastCreditList() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "person_castcredits.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var castCredits = factory.CreateCastCredits(json);
+            var castCredits = DomainObjectFactory.CreateCastCredits(json);
 
             // Assert
             Assert.IsNotNull(castCredits);
@@ -368,10 +490,9 @@ namespace TvMaze.Tests {
         public void CreateCastCredits_ValidCastCreditJsonDataWithEmbedShow_CastCreditListWithShow() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "person_castcredits_embed_show.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var castCredits = factory.CreateCastCredits(json);
+            var castCredits = DomainObjectFactory.CreateCastCredits(json);
 
             // Assert
             Assert.IsNotNull(castCredits);
@@ -389,10 +510,9 @@ namespace TvMaze.Tests {
         public void CreateCrewCredits_ValidCrewCreditJsonData_CrewCreditList() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "person_crewcredits.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var crewCredits = factory.CreateCrewCredits(json);
+            var crewCredits = DomainObjectFactory.CreateCrewCredits(json);
 
             // Assert
             Assert.IsNotNull(crewCredits);
@@ -410,10 +530,9 @@ namespace TvMaze.Tests {
         public void CreateCrewCredits_ValidCrewCreditJsonDataWithShow_CrewCreditListWithShow() {
             // Arrange
             var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "person_crewcredits_embed_show.json"));
-            var factory = new DomainObjectFactory();
 
             // Act
-            var crewCredits = factory.CreateCrewCredits(json);
+            var crewCredits = DomainObjectFactory.CreateCrewCredits(json);
 
             // Assert
             Assert.IsNotNull(crewCredits);
