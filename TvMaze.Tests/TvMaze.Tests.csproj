@@ -144,6 +144,9 @@
     <None Include="json_data_examples\v1\shows.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="json_data_examples\v1\show_embed_episodes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="json_data_examples\v1\show_embed_cast.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

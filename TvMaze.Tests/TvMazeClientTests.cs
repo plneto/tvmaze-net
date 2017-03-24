@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using NUnit.Framework;
@@ -18,6 +19,144 @@ namespace TvMaze.Tests {
         public void SetUp() {
             BasePath = AppDomain.CurrentDomain.BaseDirectory;
         }
+
+        #region IPeople
+        #endregion
+
+        #region IPeopleAsync
+
+        [Test]
+        public async Task GetPersonInfoAsync_MockWebApi_PersonId_Person() {
+            // Arrange
+            const int personId = 1;
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "person.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/people/{personId}")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var person = await tvMazeClient.GetPersonInfoAsync(personId.ToString());
+
+            // Assert
+            Assert.IsNotNull(person);
+            Assert.AreEqual(personId, person.Id);
+            mockHttp.VerifyNoOutstandingExpectation();
+        }
+
+        [Test]
+        public async Task GetGetPersonInfoAsync_MockWebApi_PersonId_WithQueryParam_Person() {
+            // Arrange
+            const int personId = 1;
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "person_embed_castcredits.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/people/{personId}")
+                .WithQueryString("embed", "castcredits")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var person = await tvMazeClient.GetPersonInfoAsync(personId.ToString(), EmbedType.CastCredits);
+
+            // Assert
+            Assert.IsNotNull(person);
+            Assert.AreEqual(personId, person.Id);
+            Assert.IsNotEmpty(person.CastCredits);
+            mockHttp.VerifyNoOutstandingExpectation();
+
+        }
+
+        [Test]
+        public async Task GetCastCreditsAsync_MockWebApi_PersonId_CastCredits() {
+            // Arrange
+            const int personId = 1;
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "person_castcredits.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/people/{personId}/castcredits")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var castCredits = await tvMazeClient.GetCastCreditsAsync(personId.ToString());
+
+            // Assert
+            Assert.IsNotNull(castCredits);
+            Assert.IsNotEmpty(castCredits);
+            mockHttp.VerifyNoOutstandingExpectation();
+        }
+
+
+        [Test]
+        public async Task GetCastCreditsAsync_MockWebApi_PersonId_WithQueryParam_CastCredits() {
+            // Arrange
+            const int personId = 1;
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "person_castcredits_embed_show.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/people/{personId}/castcredits")
+                .WithQueryString("embed", "show")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var castCredits = await tvMazeClient.GetCastCreditsAsync(personId.ToString(), EmbedType.Show);
+
+            // Assert
+            Assert.IsNotNull(castCredits);
+            Assert.IsNotEmpty(castCredits);
+            Assert.IsNotNull(castCredits.ToArray()[0].Show);
+            mockHttp.VerifyNoOutstandingExpectation();
+
+        }
+
+        // public async Task<IEnumerable<CrewCredit>> GetCrewCreditsAsync(string personId, EmbedType? embed = null) {
+        [Test]
+        public async Task GetCrewCreditsAsync_MockWebApi_PersonId_CrewCredits() {
+            // Arrange
+            const int personId = 1;
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "person_crewcredits.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/people/{personId}/crewcredits")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var crewCredits = await tvMazeClient.GetCrewCreditsAsync(personId.ToString());
+
+            // Assert
+            Assert.IsNotNull(crewCredits);
+            Assert.IsNotEmpty(crewCredits);
+            mockHttp.VerifyNoOutstandingExpectation();
+        }
+
+        [Test]
+        public async Task GetCrewCreditsAsync_MockWebApi_PersonId_WithQueryParam_CrewCredits() {
+            // Arrange
+            const int personId = 1;
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "person_crewcredits_embed_show.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/people/{personId}/crewcredits")
+                .WithQueryString("embed", "show")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var crewCredits = await tvMazeClient.GetCrewCreditsAsync(personId.ToString(), EmbedType.Show);
+
+            // Assert
+            Assert.IsNotNull(crewCredits);
+            Assert.IsNotEmpty(crewCredits);
+            Assert.IsNotNull(crewCredits.ToArray()[0].Show);
+            mockHttp.VerifyNoOutstandingExpectation();
+
+        }
+
+        #endregion
 
         #region ISchedule
 
@@ -187,6 +326,105 @@ namespace TvMaze.Tests {
             Assert.IsNotEmpty(schedule.Episodes);
             mockHttp.VerifyNoOutstandingExpectation();
 
+        }
+
+        #endregion
+
+        #region ISearch
+        #endregion
+
+        #region ISearchAsync
+
+        [Test]
+        public async Task ShowSearchAsync_MockWebApi_SearchQuery_ShowSearchResults() {
+            // Arrange
+            const string query = "girls";
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "search_show.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/search/shows")
+                .WithQueryString("q", query)
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var results = await tvMazeClient.ShowSearchAsync(query);
+
+            // Assert
+            Assert.IsNotNull(results);
+            Assert.IsNotEmpty(results);
+            Assert.IsInstanceOf<Show>(results.ToArray()[0].Element);
+            Assert.AreEqual(139, results.ToArray()[0].Element.Id);
+            mockHttp.VerifyNoOutstandingExpectation();
+        }
+
+        //public async Task<Show> ShowSingleSearchAsync(string query, EmbedType? embed = null) {
+        [Test]
+        public async Task ShowSingleSearchAsync_MockWebApi_SearchQuery_Show() {
+            // Arrange
+            const string query = "under the dome";
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "show.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/singlesearch/shows")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var show = await tvMazeClient.ShowSingleSearchAsync(query);
+
+            // Assert
+            Assert.IsNotNull(show);
+            Assert.AreEqual(1, show.Id);
+            mockHttp.VerifyNoOutstandingExpectation();
+
+        }
+
+        [Test]
+        public async Task ShowSingleSearchAsync_MockWebApi_ShowId_WithQueryParam_Show() {
+            // Arrange
+            const string query = "under the dome";
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "show_embed_episodes.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/singlesearch/shows")
+                .WithQueryString("embed", "episodes")
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var show = await tvMazeClient.ShowSingleSearchAsync(query, EmbedType.Episodes);
+
+            // Assert
+            Assert.IsNotNull(show);
+            Assert.AreEqual(1, show.Id);
+            Assert.IsNotEmpty(show.Episodes);
+            mockHttp.VerifyNoOutstandingExpectation();
+
+        }
+
+
+        [Test]
+        public async Task PeopleSearchAsync_MockWebApi_SearchQuery_PeopleSearchResults() {
+            // Arrange
+            const string query = "lauren";
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "search_people.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/search/people")
+                .WithQueryString("q", query)
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var results = await tvMazeClient.PeopleSearchAsync(query);
+
+            // Assert
+            Assert.IsNotNull(results);
+            Assert.IsNotEmpty(results);
+            Assert.IsInstanceOf<Person>(results.ToArray()[0].Element);
+            Assert.AreEqual(123897, results.ToArray()[0].Element.Id);
+            mockHttp.VerifyNoOutstandingExpectation();
         }
 
         #endregion
@@ -450,7 +688,7 @@ namespace TvMaze.Tests {
         #region IShowAsync
 
         [Test]
-        public async Task GetGetShowAsync_MockWebApi_ShowId_Show() {
+        public async Task GetShowAsync_MockWebApi_ShowId_Show() {
             // Arrange
             const int showId = 1;
             var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "show.json"));
@@ -471,7 +709,7 @@ namespace TvMaze.Tests {
         }
 
         [Test]
-        public async Task GetGetShowAsync_MockWebApi_ShowId_WithQueryParam_Show() {
+        public async Task GetShowAsync_MockWebApi_ShowId_WithQueryParam_Show() {
             // Arrange
             const int showId = 1;
             var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "show_embed_cast.json"));

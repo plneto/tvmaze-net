@@ -77,6 +77,7 @@ namespace TvMaze {
             JObject jObject = JObject.Parse(json);
             var show = jObject.ToObject<Show>();
             show.Casts = jObject["_embedded"]?["cast"]?.ToObject<IList<Cast>>();
+            show.Episodes = jObject["_embedded"]?["episodes"]?.ToObject<IList<Episode>>();
             
             return show;
         }

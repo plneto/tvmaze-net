@@ -28,5 +28,6 @@ namespace TvMaze.Domain {
         [JsonProperty(PropertyName = "_links")]
         public IDictionary<LinkType, Link> Links { get; set; }
         public IList<Cast> Casts { get; set; }
+        public IList<Episode>  Episodes { get; set; }
     }
 }

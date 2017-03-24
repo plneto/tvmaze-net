@@ -219,7 +219,6 @@ namespace TvMaze.Tests {
 
         }
 
-
         [Test]
         public void CreateShows_ValidShowsJsonData_ShowInstanceList() {
             // Arrange
@@ -345,6 +344,60 @@ namespace TvMaze.Tests {
 
             Assert.IsNotNull(show.Casts);
             Assert.IsNotEmpty(show.Casts);
+
+        }
+
+
+        [Test]
+        public void CreateShow_ValidShowJsonDataWithEmbedEpisodes_ShowInstance() {
+            // Arrange
+            var json = File.ReadAllText(Path.Combine(BasePath, JSON_DATA_PATH, "show_embed_episodes.json"));
+
+            // Act
+            var show = DomainObjectFactory.CreateShow(json);
+
+            // Assert
+            Assert.IsNotNull(show);
+            Assert.AreEqual(1, show.Id);
+            Assert.AreEqual("http://www.tvmaze.com/shows/1/under-the-dome", show.Url);
+            Assert.AreEqual("Under the Dome", show.Name);
+            Assert.AreEqual("Scripted", show.Type);
+            Assert.AreEqual("English", show.Language);
+            Assert.Contains("Drama", show.Genres);
+            Assert.Contains("Science-Fiction", show.Genres);
+            Assert.Contains("Thriller", show.Genres);
+            Assert.AreEqual("Ended", show.Status);
+            Assert.AreEqual(60, show.Runtime);
+            Assert.AreEqual(new DateTime(2013, 06, 24), show.Premiered);
+            Assert.AreEqual("22:00", show.Schedule.Time);
+            Assert.Contains("Thursday", show.Schedule.Days);
+            Assert.AreEqual(6.6f, show.Rating.Average);
+            Assert.AreEqual(0, show.Weight);
+            Assert.AreEqual(2, show.Network.Id);
+            Assert.AreEqual("CBS", show.Network.Name);
+            Assert.AreEqual("United States", show.Network.Country.Name);
+            Assert.AreEqual("US", show.Network.Country.Code);
+            Assert.AreEqual("America/New_York", show.Network.Country.Timezone);
+            Assert.IsNull(show.WebChannel);
+            Assert.IsNotNull(show.Externals);
+            Assert.IsNotEmpty(show.Externals);
+            Assert.IsTrue(show.Externals.ContainsKey("tvrage"));
+            Assert.AreEqual("25988", show.Externals["tvrage"]);
+            Assert.IsTrue(show.Externals.ContainsKey("thetvdb"));
+            Assert.AreEqual("264492", show.Externals["thetvdb"]);
+            Assert.IsTrue(show.Externals.ContainsKey("imdb"));
+            Assert.AreEqual("tt1553656", show.Externals["imdb"]);
+            Assert.IsNotEmpty(show.Image);
+            Assert.IsTrue(show.Image.ContainsKey(ImageType.Medium));
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
+            Assert.IsTrue(show.Image.ContainsKey(ImageType.Original));
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
+            Assert.AreEqual("<p><strong>Under the Dome</strong> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+                show.Summary);
+            Assert.AreEqual(1490211618, show.Updated);
+
+            Assert.IsNotNull(show.Episodes);
+            Assert.IsNotEmpty(show.Episodes);
 
         }
 

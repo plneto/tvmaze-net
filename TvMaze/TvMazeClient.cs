@@ -45,8 +45,8 @@ namespace TvMaze {
         /// </summary>
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
-        public Person GetPersonInfo(string personId, EmbedType embed) {
-            throw new NotImplementedException();
+        public Person GetPersonInfo(string personId, EmbedType? embed = null) {
+            return GetPersonInfoAsync(personId, embed).Result;
         }
 
         /// <summary>
@@ -56,8 +56,8 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All cast credits for a person</returns>
-        public IEnumerable<CastCredit> GetCastCredits(string personId, EmbedType embed) {
-            throw new NotImplementedException();
+        public IEnumerable<CastCredit> GetCastCredits(string personId, EmbedType? embed = null) {
+            return GetCastCreditsAsync(personId, embed).Result;
         }
 
         /// <summary>
@@ -67,8 +67,8 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All crew credits for a person</returns>
-        public IEnumerable<CrewCredit> GetCrewCredits(string personId, EmbedType embed) {
-            throw new NotImplementedException();
+        public IEnumerable<CrewCredit> GetCrewCredits(string personId, EmbedType? embed = null) {
+            return GetCrewCreditsAsync(personId, embed).Result;
         }
 
         #endregion
@@ -82,8 +82,34 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All primary information for a given person with possible embedding of additional information</returns>
-        public Task<Person> GetPersonInfoAsync(string personId, EmbedType embed) {
-            throw new NotImplementedException();
+        public async Task<Person> GetPersonInfoAsync(string personId, EmbedType? embed = null) {
+            if (string.IsNullOrEmpty(personId)) throw new ArgumentNullException(nameof(personId));
+
+            const string relativeUrl = "/people";
+
+            var uriBuilder = new UriBuilder(baseApiUrl) {
+                Path = relativeUrl
+            };
+
+            uriBuilder.AppendPathSegment(personId);
+
+            if (embed != null) {
+                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDescription() });
+            }
+
+            //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
+            var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
+            try {
+                httpResponse.EnsureSuccessStatusCode();
+            } catch (HttpRequestException ex) {
+                throw new HttpRequestExtException(httpResponse.StatusCode, ex.Message, ex);
+            }
+
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            Person person = DomainObjectFactory.CreatePerson(response);
+
+            return person;
         }
 
 
@@ -94,8 +120,36 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All cast credits for a person</returns>
-        public Task<IEnumerable<CastCredit>> GetCastCreditsAsync(string personId, EmbedType embed) {
-            throw new NotImplementedException();
+        /// //castcredits
+        public async Task<IEnumerable<CastCredit>> GetCastCreditsAsync(string personId, EmbedType? embed = null) {
+            if (string.IsNullOrEmpty(personId)) throw new ArgumentNullException(nameof(personId));
+
+            const string relativeUrl = "/people";
+
+            var uriBuilder = new UriBuilder(baseApiUrl) {
+                Path = relativeUrl
+            };
+
+            uriBuilder.AppendPathSegment(personId);
+            uriBuilder.AppendPathSegment("castcredits");
+
+            if (embed != null) {
+                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDescription() });
+            }
+
+            //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
+            var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
+            try {
+                httpResponse.EnsureSuccessStatusCode();
+            } catch (HttpRequestException ex) {
+                throw new HttpRequestExtException(httpResponse.StatusCode, ex.Message, ex);
+            }
+
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            IEnumerable<CastCredit> castCredits = DomainObjectFactory.CreateCastCredits(response);
+
+            return castCredits;
         }
 
 
@@ -106,8 +160,35 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All crew credits for a person</returns>
-        public Task<IEnumerable<CrewCredit>> GetCrewCreditsAsync(string personId, EmbedType embed) {
-            throw new NotImplementedException();
+        public async Task<IEnumerable<CrewCredit>> GetCrewCreditsAsync(string personId, EmbedType? embed = null) {
+            if (string.IsNullOrEmpty(personId)) throw new ArgumentNullException(nameof(personId));
+
+            const string relativeUrl = "/people";
+
+            var uriBuilder = new UriBuilder(baseApiUrl) {
+                Path = relativeUrl
+            };
+
+            uriBuilder.AppendPathSegment(personId);
+            uriBuilder.AppendPathSegment("crewcredits");
+
+            if (embed != null) {
+                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDescription() });
+            }
+
+            //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
+            var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
+            try {
+                httpResponse.EnsureSuccessStatusCode();
+            } catch (HttpRequestException ex) {
+                throw new HttpRequestExtException(httpResponse.StatusCode, ex.Message, ex);
+            }
+
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            IEnumerable<CrewCredit> crewCredits = DomainObjectFactory.CreateCrewCredits(response);
+
+            return crewCredits;
         }
 
         #endregion
@@ -225,16 +306,17 @@ namespace TvMaze {
         /// </summary>
         /// <param name="query">Search query - show's name</param>
         public IEnumerable<SearchResult<Show>> ShowSearch(string query) {
-            throw new NotImplementedException();
+            return ShowSearchAsync(query).Result;
         }
 
         /// <summary>
         /// Search the single tv show in TvMaze database by show's name.
         /// </summary>
         /// <param name="query">Search query - show's name</param>
+        /// <param name="embed">Embedded additional information</param>
         /// <returns>Returns exactly one result, or no result at all.</returns>
-        public SearchResult<Show> ShowSingleSearch(string query) {
-            throw new NotImplementedException();
+        public Show ShowSingleSearch(string query, EmbedType? embed = null) {
+            return ShowSingleSearchAsync(query).Result;
         }
 
         /// <summary>
@@ -242,10 +324,8 @@ namespace TvMaze {
         /// </summary>
         /// <param name="query">Search query</param>
         public IEnumerable<SearchResult<Person>> PeopleSearch(string query) {
-            throw new NotImplementedException();
+            return PeopleSearchAsync(query).Result;
         }
-
-        
 
 
         #endregion
@@ -257,8 +337,31 @@ namespace TvMaze {
         /// </summary>
         /// <param name="query">Search query - show's name</param>
         /// <returns>Show search results</returns>
-        public Task<IEnumerable<SearchResult<Show>>> ShowSearchAsync(string query) {
-            throw new NotImplementedException();
+        public async Task<IEnumerable<SearchResult<Show>>> ShowSearchAsync(string query) {
+            if (string.IsNullOrEmpty(query)) throw new ArgumentNullException(nameof(query));
+
+            const string relativeUrl = "/search/shows";
+
+            var uriBuilder = new UriBuilder(baseApiUrl) {
+                Path = relativeUrl
+            };
+
+
+            uriBuilder.BuildQueryString(new { q = query });
+
+            //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
+            var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
+            try {
+                httpResponse.EnsureSuccessStatusCode();
+            } catch (HttpRequestException ex) {
+                throw new HttpRequestExtException(httpResponse.StatusCode, ex.Message, ex);
+            }
+
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            IEnumerable<SearchResult<Show>> showSearchResults = DomainObjectFactory.CreateShowSearchResults(response);
+
+            return showSearchResults;
         }
 
 
@@ -266,9 +369,39 @@ namespace TvMaze {
         /// Search the single tv show in TvMaze database by show's name.
         /// </summary>
         /// <param name="query">Search query - show's name</param>
+        /// <param name="embed">Embedded additional information</param>
         /// <returns>Returns exactly one result, or no result at all.</returns>
-        public Task<SearchResult<Show>> ShowSingleSearchAsync(string query) {
-            throw new NotImplementedException();
+        public async Task<Show> ShowSingleSearchAsync(string query, EmbedType? embed = null) {
+            if (string.IsNullOrEmpty(query)) throw new ArgumentNullException(nameof(query));
+
+            const string relativeUrl = "/singlesearch/shows";
+
+            var uriBuilder = new UriBuilder(baseApiUrl) {
+                Path = relativeUrl
+            };
+
+
+            NameValueCollection queryParams = new NameValueCollection {{"q", query}};
+            
+            if (embed != null) {
+                queryParams["embed"] = embed.Value.GetEnumDescription();
+            }
+
+            uriBuilder.BuildQueryString(queryParams);
+
+            //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
+            var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
+            try {
+                httpResponse.EnsureSuccessStatusCode();
+            } catch (HttpRequestException ex) {
+                throw new HttpRequestExtException(httpResponse.StatusCode, ex.Message, ex);
+            }
+
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            Show show = DomainObjectFactory.CreateShow(response);
+
+            return show;
         }
 
 
@@ -277,8 +410,31 @@ namespace TvMaze {
         /// </summary>
         /// <param name="query">Search query</param>
         /// <returns>Person search result</returns>
-        public Task<IEnumerable<SearchResult<Person>>> PeopleSearchAsync(string query) {
-            throw new NotImplementedException();
+        public async Task<IEnumerable<SearchResult<Person>>> PeopleSearchAsync(string query) {
+            if (string.IsNullOrEmpty(query)) throw new ArgumentNullException(nameof(query));
+
+            const string relativeUrl = "/search/people";
+
+            var uriBuilder = new UriBuilder(baseApiUrl) {
+                Path = relativeUrl
+            };
+
+
+            uriBuilder.BuildQueryString(new { q = query });
+
+            //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
+            var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
+            try {
+                httpResponse.EnsureSuccessStatusCode();
+            } catch (HttpRequestException ex) {
+                throw new HttpRequestExtException(httpResponse.StatusCode, ex.Message, ex);
+            }
+
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            IEnumerable<SearchResult<Person>> peopleSearchResults = DomainObjectFactory.CreatePeopleSearchResults(response);
+
+            return peopleSearchResults;
         }
 
         #endregion
@@ -502,7 +658,7 @@ namespace TvMaze {
             };
 
             uriBuilder.AppendPathSegments(showId, "episodebynumber");
-            uriBuilder.BuildQueryString(new { season = season, number = episodeNumber });
+            uriBuilder.BuildQueryString(new {season, number = episodeNumber });
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
             var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);

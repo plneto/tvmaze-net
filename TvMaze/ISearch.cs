@@ -18,8 +18,9 @@ namespace TvMaze {
         /// Search the single tv show in TvMaze database by show's name.
         /// </summary>
         /// <param name="query">Search query - show's name</param>
+        /// <param name="embed">Embedded additional information</param>
         /// <returns>Returns exactly one result, or no result at all.</returns>
-        SearchResult<Show> ShowSingleSearch(string query);
+        Show ShowSingleSearch(string query, EmbedType? embed = null);
 
         /// <summary>
         /// Find a tv show by providing ID from external tv show providers
