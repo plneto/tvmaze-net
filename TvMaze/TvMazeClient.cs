@@ -319,6 +319,16 @@ namespace TvMaze {
             return ShowSingleSearchAsync(query).Result;
         }
 
+
+        /// <summary>
+        /// Find a tv show by providing ID from external tv show providers
+        /// </summary>
+        /// <param name="showId">External provider's show id</param>
+        /// <param name="externalTvShowProvider">External tv show provider</param>
+        public Show ShowLookup(string showId, ExternalTvShowProvider externalTvShowProvider) {
+            return ShowLookupAsync(showId, externalTvShowProvider).Result;
+        }
+
         /// <summary>
         /// Search through all the people in TvMaze database.
         /// </summary>
@@ -404,6 +414,40 @@ namespace TvMaze {
             return show;
         }
 
+
+        /// <summary>
+        /// Find a tv show by providing ID from external tv show providers
+        /// </summary>
+        /// <param name="showId">External provider's show id</param>
+        /// <param name="externalTvShowProvider">External tv show provider</param>
+        public async Task<Show> ShowLookupAsync(string showId, ExternalTvShowProvider externalTvShowProvider) {
+            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+
+            // lookup/shows?tvrage=24493
+            const string relativeUrl = "/lookup/shows";
+
+            var uriBuilder = new UriBuilder(baseApiUrl) {
+                Path = relativeUrl
+            };
+
+            NameValueCollection queryParams = new NameValueCollection { { externalTvShowProvider.GetEnumDescription(), showId } };
+
+            uriBuilder.BuildQueryString(queryParams);
+
+            //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
+            var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
+            try {
+                httpResponse.EnsureSuccessStatusCode();
+            } catch (HttpRequestException ex) {
+                throw new HttpRequestExtException(httpResponse.StatusCode, ex.Message, ex);
+            }
+
+            var response = await httpResponse.Content.ReadAsStringAsync();
+
+            Show show = DomainObjectFactory.CreateShow(response);
+
+            return show;
+        }
 
         /// <summary>
         /// Search through all the people in TvMaze database.

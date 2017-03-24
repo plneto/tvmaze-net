@@ -403,6 +403,29 @@ namespace TvMaze.Tests {
 
         }
 
+        // public async Task<Show> ShowLookupAsync(string showId, ExternalTvShowProvider externalTvShowProvider) {
+        [Test]
+        public async Task ShowLookupAsync_MockWebApi_ImdbId_Show() {
+            // Arrange
+            const string imdbId = "tt0944947";
+            var json = File.ReadAllText(Path.Combine(BasePath, DomainObjectFactoryTests.JSON_DATA_PATH, "show.json"));
+            var mockHttp = new MockHttpMessageHandler();
+            mockHttp.Expect($"{BASE_API_URL}/lookup/shows")
+                .WithQueryString("imdb", imdbId)
+                .Respond("application/json", json);
+
+            var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
+
+            // Act
+            var show = await tvMazeClient.ShowLookupAsync(imdbId, ExternalTvShowProvider.Imdb);
+
+            // Assert
+            Assert.IsNotNull(show);
+            Assert.AreEqual(1, show.Id);
+            mockHttp.VerifyNoOutstandingExpectation();
+
+        }
+
 
         [Test]
         public async Task PeopleSearchAsync_MockWebApi_SearchQuery_PeopleSearchResults() {

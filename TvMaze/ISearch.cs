@@ -27,8 +27,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">External provider's show id</param>
         /// <param name="externalTvShowProvider">External tv show provider</param>
-        // TODO
-        //void Lookup(string showId, ExternalTvShowProvider externalTvShowProvider);
+        Show ShowLookup(string showId, ExternalTvShowProvider externalTvShowProvider);
 
         /// <summary>
         /// Search through all the people in TvMaze database.
