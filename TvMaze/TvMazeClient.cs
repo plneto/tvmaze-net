@@ -578,7 +578,7 @@ namespace TvMaze {
 
         /// <summary>
         /// Gets a list of all shows in TvMaze database with all primary information included.
-        /// List is paginated with a maximus of 250 results per call.
+        /// List is paginated with a maximum of 250 results per call.
         /// The pagination is based on show ID, e.g. page 0 will contain
         /// shows with IDs between 0 and 250. This means a single page
         /// might contain less than 250 results in case of deletions.
