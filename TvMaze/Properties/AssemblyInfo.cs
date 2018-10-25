@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TvMaze")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The TvMaze .NET Client")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ztepsic")]
 [assembly: AssemblyProduct("TvMaze")]
