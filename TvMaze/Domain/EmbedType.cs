@@ -1,17 +1,17 @@
-﻿using System.ComponentModel;
+﻿using Zed.DataAnnotations;
 
 namespace TvMaze.Domain {
     public enum EmbedType {
-        [Description("episodes")]
+        [DisplayName("episodes")]
         Episodes,
 
-        [Description("cast")]
+        [DisplayName("cast")]
         Cast,
 
-        [Description("castcredits")]
+        [DisplayName("castcredits")]
         CastCredits,
 
-        [Description("show")]
+        [DisplayName("show")]
         Show
     }
 }

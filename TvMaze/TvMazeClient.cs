@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
 using TvMaze.Domain;
-using Zed.Extensions;
+using Zed.DataAnnotations;
 using Zed.Web.Extensions;
 
 namespace TvMaze {
