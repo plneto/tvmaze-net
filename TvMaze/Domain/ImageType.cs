@@ -1,11 +1,11 @@
-﻿using System.ComponentModel;
+﻿using Zed.DataAnnotations;
 
 namespace TvMaze.Domain {
     public enum ImageType {
-        [Description("original")]
+        [DisplayName("original")]
         Original,
 
-        [Description("medium")]
+        [DisplayName("medium")]
         Medium
     }
 }

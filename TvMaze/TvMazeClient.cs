@@ -94,7 +94,7 @@ namespace TvMaze {
             uriBuilder.AppendPathSegment(personId);
 
             if (embed != null) {
-                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDescription() });
+                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDisplayName() });
             }
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
@@ -134,7 +134,7 @@ namespace TvMaze {
             uriBuilder.AppendPathSegment("castcredits");
 
             if (embed != null) {
-                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDescription() });
+                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDisplayName() });
             }
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
@@ -173,7 +173,7 @@ namespace TvMaze {
             uriBuilder.AppendPathSegment("crewcredits");
 
             if (embed != null) {
-                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDescription() });
+                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDisplayName() });
             }
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
@@ -394,7 +394,7 @@ namespace TvMaze {
             NameValueCollection queryParams = new NameValueCollection {{"q", query}};
             
             if (embed != null) {
-                queryParams["embed"] = embed.Value.GetEnumDescription();
+                queryParams["embed"] = embed.Value.GetEnumDisplayName();
             }
 
             uriBuilder.BuildQueryString(queryParams);
@@ -430,7 +430,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            NameValueCollection queryParams = new NameValueCollection { { externalTvShowProvider.GetEnumDescription(), showId } };
+            NameValueCollection queryParams = new NameValueCollection { { externalTvShowProvider.GetEnumDisplayName(), showId } };
 
             uriBuilder.BuildQueryString(queryParams);
 
@@ -622,7 +622,7 @@ namespace TvMaze {
             uriBuilder.AppendPathSegment(showId);
 
             if (embed != null) {
-                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDescription() });
+                uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDisplayName() });
             }
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);

@@ -1,20 +1,19 @@
-﻿using System.ComponentModel;
-
+﻿using Zed.DataAnnotations;
 namespace TvMaze.Domain {
     public enum LinkType {
-        [Description("self")]
+        [DisplayName("self")]
         Self,
 
-        [Description("show")]
+        [DisplayName("show")]
         Show,
 
-        [Description("character")]
+        [DisplayName("character")]
         Character,
 
-        [Description("previousepisode")]
+        [DisplayName("previousepisode")]
         PreviousEpisode,
 
-        [Description("nextepisode")]
+        [DisplayName("nextepisode")]
         NextEpisode
 
     }

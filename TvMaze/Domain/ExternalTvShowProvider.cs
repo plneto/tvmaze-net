@@ -1,12 +1,12 @@
-﻿using System.ComponentModel;
+﻿using Zed.DataAnnotations;
 
 namespace TvMaze.Domain {
     public enum ExternalTvShowProvider {
-        [Description("tvrage")]
+        [DisplayName("tvrage")]
         TvRage,
-        [Description("thetvdb")]
+        [DisplayName("thetvdb")]
         TheTvDb,
-        [Description("imdb")]
+        [DisplayName("imdb")]
         Imdb
     }
 }
