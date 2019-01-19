@@ -45,7 +45,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
-        public Person GetPersonInfo(string personId, EmbedType? embed = null) {
+        public Person GetPersonInfo(int personId, EmbedType? embed = null) {
             return GetPersonInfoAsync(personId, embed).Result;
         }
 
@@ -56,7 +56,7 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All cast credits for a person</returns>
-        public IEnumerable<CastCredit> GetCastCredits(string personId, EmbedType? embed = null) {
+        public IEnumerable<CastCredit> GetCastCredits(int personId, EmbedType? embed = null) {
             return GetCastCreditsAsync(personId, embed).Result;
         }
 
@@ -67,7 +67,7 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All crew credits for a person</returns>
-        public IEnumerable<CrewCredit> GetCrewCredits(string personId, EmbedType? embed = null) {
+        public IEnumerable<CrewCredit> GetCrewCredits(int personId, EmbedType? embed = null) {
             return GetCrewCreditsAsync(personId, embed).Result;
         }
 
@@ -82,8 +82,7 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All primary information for a given person with possible embedding of additional information</returns>
-        public async Task<Person> GetPersonInfoAsync(string personId, EmbedType? embed = null) {
-            if (string.IsNullOrEmpty(personId)) throw new ArgumentNullException(nameof(personId));
+        public async Task<Person> GetPersonInfoAsync(int personId, EmbedType? embed = null) {
 
             const string relativeUrl = "/people";
 
@@ -91,7 +90,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegment(personId);
+            uriBuilder.AppendPathSegment(personId.ToString());
 
             if (embed != null) {
                 uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDisplayName() });
@@ -121,8 +120,7 @@ namespace TvMaze {
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All cast credits for a person</returns>
         /// //castcredits
-        public async Task<IEnumerable<CastCredit>> GetCastCreditsAsync(string personId, EmbedType? embed = null) {
-            if (string.IsNullOrEmpty(personId)) throw new ArgumentNullException(nameof(personId));
+        public async Task<IEnumerable<CastCredit>> GetCastCreditsAsync(int personId, EmbedType? embed = null) {
 
             const string relativeUrl = "/people";
 
@@ -130,7 +128,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegment(personId);
+            uriBuilder.AppendPathSegment(personId.ToString());
             uriBuilder.AppendPathSegment("castcredits");
 
             if (embed != null) {
@@ -160,8 +158,7 @@ namespace TvMaze {
         /// <param name="personId">Person id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>All crew credits for a person</returns>
-        public async Task<IEnumerable<CrewCredit>> GetCrewCreditsAsync(string personId, EmbedType? embed = null) {
-            if (string.IsNullOrEmpty(personId)) throw new ArgumentNullException(nameof(personId));
+        public async Task<IEnumerable<CrewCredit>> GetCrewCreditsAsync(int personId, EmbedType? embed = null) {
 
             const string relativeUrl = "/people";
 
@@ -169,7 +166,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegment(personId);
+            uriBuilder.AppendPathSegment(personId.ToString());
             uriBuilder.AppendPathSegment("crewcredits");
 
             if (embed != null) {
@@ -421,7 +418,6 @@ namespace TvMaze {
         /// <param name="showId">External provider's show id</param>
         /// <param name="externalTvShowProvider">External tv show provider</param>
         public async Task<Show> ShowLookupAsync(string showId, ExternalTvShowProvider externalTvShowProvider) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
 
             // lookup/shows?tvrage=24493
             const string relativeUrl = "/lookup/shows";
@@ -430,7 +426,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            NameValueCollection queryParams = new NameValueCollection { { externalTvShowProvider.GetEnumDisplayName(), showId } };
+            NameValueCollection queryParams = new NameValueCollection { { externalTvShowProvider.GetEnumDisplayName(), showId.ToString() } };
 
             uriBuilder.BuildQueryString(queryParams);
 
@@ -492,7 +488,7 @@ namespace TvMaze {
         /// <param name="showId"></param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>Show info</returns>
-        public Show GetShow(string showId, EmbedType? embed = null) {
+        public Show GetShow(int showId, EmbedType? embed = null) {
             return GetShowAsync(showId, embed).Result;
         }
 
@@ -506,7 +502,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="includeSpecials">True to include special episodes, otherwise false. Default is true.</param>
         /// <returns>Epiodes list</returns>
-        public IEnumerable<Episode> GetShowEpisodeList(string showId, bool includeSpecials = true) {
+        public IEnumerable<Episode> GetShowEpisodeList(int showId, bool includeSpecials = true) {
             return GetShowEpisodeListAsync(showId, includeSpecials).Result;
         }
 
@@ -519,7 +515,7 @@ namespace TvMaze {
         /// <param name="season">Season number</param>
         /// <param name="episodeNumber">Episode number</param>
         /// <returns>Specific episode</returns>
-        public Episode GetShowEpisode(string showId, string season, string episodeNumber) {
+        public Episode GetShowEpisode(int showId, int season, int episodeNumber) {
             return GetShowEpisodeAsync(showId, season, episodeNumber).Result;
         }
 
@@ -530,7 +526,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="airDate">Air date</param>
         /// <returns>List of epiodes of particular show</returns>
-        public IEnumerable<Episode> GetShowEpisodes(string showId, DateTime airDate) {
+        public IEnumerable<Episode> GetShowEpisodes(int showId, DateTime airDate) {
             return GetShowEpisodesAsync(showId, airDate).Result;
         }
 
@@ -541,7 +537,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>Coplete list of seasons for the given show</returns>
-        public IEnumerable<Season> GetShowSeasons(string showId) {
+        public IEnumerable<Season> GetShowSeasons(int showId) {
             return GetShowSeasonsAsync(showId).Result;
         }
 
@@ -553,7 +549,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>List of main cast for a show</returns>
-        public IEnumerable<Cast> GetShowCast(string showId) {
+        public IEnumerable<Cast> GetShowCast(int showId) {
             return GetShowCastAsync(showId).Result;
         }
 
@@ -562,7 +558,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>A list of main crew for a show.</returns>
-        public IEnumerable<Crew> GetShowCrew(string showId) {
+        public IEnumerable<Crew> GetShowCrew(int showId) {
             return GetShowCrewAsync(showId).Result;
         }
 
@@ -572,7 +568,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId"></param>
         /// <returns>A list of aliases for a show</returns>
-        public IEnumerable<Alias> GetShowAliases(string showId) {
+        public IEnumerable<Alias> GetShowAliases(int showId) {
             return GetShowAliasesAsync(showId).Result;
         }
 
@@ -610,8 +606,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>Show info</returns>
-        public async Task<Show> GetShowAsync(string showId, EmbedType? embed = null) {
-            if(string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+        public async Task<Show> GetShowAsync(int showId, EmbedType? embed = null) {
 
             const string relativeUrl = "/shows";
 
@@ -619,7 +614,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegment(showId);
+            uriBuilder.AppendPathSegment(showId.ToString());
 
             if (embed != null) {
                 uriBuilder.BuildQueryString(new { embed = embed.Value.GetEnumDisplayName() });
@@ -651,8 +646,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="includeSpecials">True to include special episodes, otherwise false. Default is true.</param>
         /// <returns>Epiodes list</returns>
-        public async Task<IEnumerable<Episode>> GetShowEpisodeListAsync(string showId, bool includeSpecials = true) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+        public async Task<IEnumerable<Episode>> GetShowEpisodeListAsync(int showId, bool includeSpecials = true) {
 
             const string relativeUrl = "/shows";
 
@@ -660,7 +654,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegments(showId, "episodes");
+            uriBuilder.AppendPathSegments(showId.ToString(), "episodes");
 
             if (includeSpecials) {
                 uriBuilder.BuildQueryString(new { specials = "1" });
@@ -690,10 +684,7 @@ namespace TvMaze {
         /// <param name="season">Season number</param>
         /// <param name="episodeNumber">Episode number</param>
         /// <returns>Specific episode</returns>
-        public async Task<Episode> GetShowEpisodeAsync(string showId, string season, string episodeNumber) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
-            if (string.IsNullOrEmpty(season)) throw new ArgumentNullException(nameof(season));
-            if (string.IsNullOrEmpty(episodeNumber)) throw new ArgumentNullException(nameof(episodeNumber));
+        public async Task<Episode> GetShowEpisodeAsync(int showId, int season, int episodeNumber) {
 
             const string relativeUrl = "/shows";
 
@@ -701,7 +692,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegments(showId, "episodebynumber");
+            uriBuilder.AppendPathSegments(showId.ToString(), "episodebynumber");
             uriBuilder.BuildQueryString(new {season, number = episodeNumber });
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
@@ -725,8 +716,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="airDate">Air date</param>
         /// <returns>List of epiodes of particular show</returns>
-        public async Task<IEnumerable<Episode>> GetShowEpisodesAsync(string showId, DateTime airDate) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+        public async Task<IEnumerable<Episode>> GetShowEpisodesAsync(int showId, DateTime airDate) {
 
             const string relativeUrl = "/shows";
 
@@ -734,7 +724,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegments(showId, "episodesbydate");
+            uriBuilder.AppendPathSegments(showId.ToString(), "episodesbydate");
             uriBuilder.BuildQueryString(new { date = airDate.ToString(DATE_ISO_8601, CultureInfo.InvariantCulture) });
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
@@ -759,8 +749,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>Coplete list of seasons for the given show</returns>
-        public async Task<IEnumerable<Season>> GetShowSeasonsAsync(string showId) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+        public async Task<IEnumerable<Season>> GetShowSeasonsAsync(int showId) {
 
             const string relativeUrl = "/shows";
 
@@ -768,7 +757,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegments(showId, "seasons");
+            uriBuilder.AppendPathSegments(showId.ToString(), "seasons");
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
             var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
@@ -793,8 +782,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>List of main cast for a show</returns>
-        public async Task<IEnumerable<Cast>> GetShowCastAsync(string showId) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+        public async Task<IEnumerable<Cast>> GetShowCastAsync(int showId) {
 
             const string relativeUrl = "/shows";
 
@@ -802,7 +790,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegments(showId, "cast");
+            uriBuilder.AppendPathSegments(showId.ToString(), "cast");
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
             var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
@@ -825,8 +813,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>A list of main crew for a show.</returns>
-        public async Task<IEnumerable<Crew>> GetShowCrewAsync(string showId) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+        public async Task<IEnumerable<Crew>> GetShowCrewAsync(int showId) {
 
             const string relativeUrl = "/shows";
 
@@ -834,7 +821,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegments(showId, "crew");
+            uriBuilder.AppendPathSegments(showId.ToString(), "crew");
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
             var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);
@@ -856,8 +843,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId"></param>
         /// <returns>A list of aliases for a show</returns>
-        public async Task<IEnumerable<Alias>> GetShowAliasesAsync(string showId) {
-            if (string.IsNullOrEmpty(showId)) throw new ArgumentNullException(nameof(showId));
+        public async Task<IEnumerable<Alias>> GetShowAliasesAsync(int showId) {
 
             const string relativeUrl = "/shows";
 
@@ -865,7 +851,7 @@ namespace TvMaze {
                 Path = relativeUrl
             };
 
-            uriBuilder.AppendPathSegments(showId, "akas");
+            uriBuilder.AppendPathSegments(showId.ToString(), "akas");
 
             //var response = await httpClient.GetStringAsync(uriBuilder.Uri);
             var httpResponse = await httpClient.GetAsync(uriBuilder.Uri);

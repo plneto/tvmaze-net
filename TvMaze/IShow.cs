@@ -15,7 +15,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="embed">Embedded additional information</param>
         /// <returns>Show info</returns>
-        Show GetShow(string showId, EmbedType? embed = null);
+        Show GetShow(int showId, EmbedType? embed = null);
 
         /// <summary>
         /// Gets a complete list of episodes for the given show.
@@ -27,7 +27,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="includeSpecials">True to include special episodes, otherwise false. Default is true.</param>
         /// <returns>Epiodes list</returns>
-        IEnumerable<Episode> GetShowEpisodeList(string showId, bool includeSpecials = true);
+        IEnumerable<Episode> GetShowEpisodeList(int showId, bool includeSpecials = true);
 
         /// <summary>
         /// Retreive one specific episode from particular show given
@@ -37,7 +37,7 @@ namespace TvMaze {
         /// <param name="season">Season number</param>
         /// <param name="episodeNumber">Episode number</param>
         /// <returns>Specific episode</returns>
-        Episode GetShowEpisode(string showId, string season, string episodeNumber);
+        Episode GetShowEpisode(int showId, int season, int episodeNumber);
 
         /// <summary>
         /// Retreive all episodes from particular show that have aired on a specific date.
@@ -45,7 +45,7 @@ namespace TvMaze {
         /// <param name="showId">Show id</param>
         /// <param name="airDate">Air date</param>
         /// <returns>List of epiodes of particular show</returns>
-        IEnumerable<Episode> GetShowEpisodes(string showId, DateTime airDate);
+        IEnumerable<Episode> GetShowEpisodes(int showId, DateTime airDate);
 
         /// <summary>
         /// Gets a complete list of seasons for the given show.
@@ -54,7 +54,7 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>Coplete list of seasons for the given show</returns>
-        IEnumerable<Season> GetShowSeasons(string showId);
+        IEnumerable<Season> GetShowSeasons(int showId);
 
         /// <summary>
         /// Gets a list of main cast for a show.
@@ -64,21 +64,21 @@ namespace TvMaze {
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>List of main cast for a show</returns>
-        IEnumerable<Cast> GetShowCast(string showId);
+        IEnumerable<Cast> GetShowCast(int showId);
 
         /// <summary>
         /// A list of main crew for a show. Each crew item is a combination of a person and their crew type.
         /// </summary>
         /// <param name="showId">Show id</param>
         /// <returns>A list of main crew for a show.</returns>
-        IEnumerable<Crew> GetShowCrew(string showId);
+        IEnumerable<Crew> GetShowCrew(int showId);
 
         /// <summary>
         /// Gets a list of aliases for a show.
         /// </summary>
         /// <param name="showId"></param>
         /// <returns>A list of aliases for a show</returns>
-        IEnumerable<Alias> GetShowAliases(string showId);
+        IEnumerable<Alias> GetShowAliases(int showId);
 
         /// <summary>
         /// Gets a list of all shows in TvMaze database with all primary information included.

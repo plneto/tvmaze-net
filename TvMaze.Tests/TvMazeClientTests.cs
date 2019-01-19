@@ -37,7 +37,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var person = await tvMazeClient.GetPersonInfoAsync(personId.ToString());
+            var person = await tvMazeClient.GetPersonInfoAsync(personId);
 
             // Assert
             Assert.IsNotNull(person);
@@ -58,7 +58,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var person = await tvMazeClient.GetPersonInfoAsync(personId.ToString(), EmbedType.CastCredits);
+            var person = await tvMazeClient.GetPersonInfoAsync(personId, EmbedType.CastCredits);
 
             // Assert
             Assert.IsNotNull(person);
@@ -80,7 +80,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var castCredits = await tvMazeClient.GetCastCreditsAsync(personId.ToString());
+            var castCredits = await tvMazeClient.GetCastCreditsAsync(personId);
 
             // Assert
             Assert.IsNotNull(castCredits);
@@ -102,7 +102,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var castCredits = await tvMazeClient.GetCastCreditsAsync(personId.ToString(), EmbedType.Show);
+            var castCredits = await tvMazeClient.GetCastCreditsAsync(personId, EmbedType.Show);
 
             // Assert
             Assert.IsNotNull(castCredits);
@@ -125,7 +125,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var crewCredits = await tvMazeClient.GetCrewCreditsAsync(personId.ToString());
+            var crewCredits = await tvMazeClient.GetCrewCreditsAsync(personId);
 
             // Assert
             Assert.IsNotNull(crewCredits);
@@ -146,7 +146,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var crewCredits = await tvMazeClient.GetCrewCreditsAsync(personId.ToString(), EmbedType.Show);
+            var crewCredits = await tvMazeClient.GetCrewCreditsAsync(personId, EmbedType.Show);
 
             // Assert
             Assert.IsNotNull(crewCredits);
@@ -466,7 +466,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var show = tvMazeClient.GetShow(showId.ToString());
+            var show = tvMazeClient.GetShow(showId);
 
             // Assert
             Assert.IsNotNull(show);
@@ -488,7 +488,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var show = tvMazeClient.GetShow(showId.ToString(), EmbedType.Cast);
+            var show = tvMazeClient.GetShow(showId, EmbedType.Cast);
 
             // Assert
             Assert.IsNotNull(show);
@@ -511,7 +511,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var episodeList = tvMazeClient.GetShowEpisodeList(showId.ToString());
+            var episodeList = tvMazeClient.GetShowEpisodeList(showId);
 
             // Assert
             Assert.IsNotNull(episodeList);
@@ -535,7 +535,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var episode = tvMazeClient.GetShowEpisode(showId.ToString(), season.ToString(), episodeNumber.ToString());
+            var episode = tvMazeClient.GetShowEpisode(showId, season, episodeNumber);
 
             // Assert
             Assert.IsNotNull(episode);
@@ -556,7 +556,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var episodeList = tvMazeClient.GetShowEpisodes(showId.ToString(), new DateTime(2013, 7, 1));
+            var episodeList = tvMazeClient.GetShowEpisodes(showId, new DateTime(2013, 7, 1));
 
             // Assert
             Assert.IsNotNull(episodeList);
@@ -577,7 +577,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var seasons = tvMazeClient.GetShowSeasons(showId.ToString());
+            var seasons = tvMazeClient.GetShowSeasons(showId);
 
             // Assert
             Assert.IsNotNull(seasons);
@@ -598,7 +598,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var cast = tvMazeClient.GetShowCast(showId.ToString());
+            var cast = tvMazeClient.GetShowCast(showId);
 
             // Assert
             Assert.IsNotNull(cast);
@@ -618,7 +618,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var crew = tvMazeClient.GetShowCrew(showId.ToString());
+            var crew = tvMazeClient.GetShowCrew(showId);
 
             // Assert
             Assert.IsNotNull(crew);
@@ -638,7 +638,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var aliases = tvMazeClient.GetShowAliases(showId.ToString());
+            var aliases = tvMazeClient.GetShowAliases(showId);
 
             // Assert
             Assert.IsNotNull(aliases);
@@ -722,7 +722,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var show = await tvMazeClient.GetShowAsync(showId.ToString());
+            var show = await tvMazeClient.GetShowAsync(showId);
 
             // Assert
             Assert.IsNotNull(show);
@@ -744,7 +744,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var show = await tvMazeClient.GetShowAsync(showId.ToString(), EmbedType.Cast);
+            var show = await tvMazeClient.GetShowAsync(showId, EmbedType.Cast);
 
             // Assert
             Assert.IsNotNull(show);
@@ -768,7 +768,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var episodeList = await tvMazeClient.GetShowEpisodeListAsync(showId.ToString());
+            var episodeList = await tvMazeClient.GetShowEpisodeListAsync(showId);
 
             // Assert
             Assert.IsNotNull(episodeList);
@@ -792,7 +792,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var episode = await tvMazeClient.GetShowEpisodeAsync(showId.ToString(), season.ToString(), episodeNumber.ToString());
+            var episode = await tvMazeClient.GetShowEpisodeAsync(showId, season, episodeNumber);
 
             // Assert
             Assert.IsNotNull(episode);
@@ -813,7 +813,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var episodeList = await tvMazeClient.GetShowEpisodesAsync(showId.ToString(), new DateTime(2013, 7, 1));
+            var episodeList = await tvMazeClient.GetShowEpisodesAsync(showId, new DateTime(2013, 7, 1));
 
             // Assert
             Assert.IsNotNull(episodeList);
@@ -834,7 +834,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var seasons = await tvMazeClient.GetShowSeasonsAsync(showId.ToString());
+            var seasons = await tvMazeClient.GetShowSeasonsAsync(showId);
 
             // Assert
             Assert.IsNotNull(seasons);
@@ -855,7 +855,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var cast = await tvMazeClient.GetShowCastAsync(showId.ToString());
+            var cast = await tvMazeClient.GetShowCastAsync(showId);
 
             // Assert
             Assert.IsNotNull(cast);
@@ -876,7 +876,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var crew = await tvMazeClient.GetShowCrewAsync(showId.ToString());
+            var crew = await tvMazeClient.GetShowCrewAsync(showId);
 
             // Assert
             Assert.IsNotNull(crew);
@@ -896,7 +896,7 @@ namespace TvMaze.Tests {
             var tvMazeClient = new TvMazeClient(BASE_API_URL, mockHttp.ToHttpClient());
 
             // Act
-            var aliases = await tvMazeClient.GetShowAliasesAsync(showId.ToString());
+            var aliases = await tvMazeClient.GetShowAliasesAsync(showId);
 
             // Assert
             Assert.IsNotNull(aliases);
