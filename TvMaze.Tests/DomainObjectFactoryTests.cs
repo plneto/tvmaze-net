@@ -32,13 +32,13 @@ namespace TvMaze.Tests {
             Assert.AreEqual(1, episode.Number);
             Assert.AreEqual("2013-06-24", episode.AirDate);
             Assert.AreEqual("22:00", episode.AirTime);
-            Assert.AreEqual("2013-06-24T22:00:00-04:00", episode.AirStamp);
-            Assert.AreEqual(DateTimeOffset.Parse("2013-06-24T22:00:00-04:00"), episode.AirDateTimeOffset);
+            Assert.AreEqual("2013-06-25T03:00:00+00:00", episode.AirStamp);
+            Assert.AreEqual(DateTimeOffset.Parse("2013-06-25T03:00:00+00:00"), episode.AirDateTimeOffset);
             Assert.AreEqual(60, episode.RunTime);
             Assert.AreEqual(2, episode.Image.Count);
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_landscape/1/4388.jpg",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_landscape/1/4388.jpg",
                 episode.Image[ImageType.Medium]);
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/original_untouched/1/4388.jpg",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/1/4388.jpg",
                 episode.Image[ImageType.Original]);
             Assert.AreEqual(
                             "<p>When the residents of Chester's Mill find themselves trapped under a massive transparent dome with no way out, they struggle to survive as resources rapidly dwindle and panic quickly escalates.</p>",
@@ -70,13 +70,13 @@ namespace TvMaze.Tests {
             Assert.AreEqual(1, episode.Number);
             Assert.AreEqual("2013-06-24", episode.AirDate);
             Assert.AreEqual("22:00", episode.AirTime);
-            Assert.AreEqual("2013-06-24T22:00:00-04:00", episode.AirStamp);
-            Assert.AreEqual(DateTimeOffset.Parse("2013-06-24T22:00:00-04:00"), episode.AirDateTimeOffset);
+            Assert.AreEqual("2013-06-25T03:00:00+00:00", episode.AirStamp);
+            Assert.AreEqual(DateTimeOffset.Parse("2013-06-25T03:00:00+00:00"), episode.AirDateTimeOffset);
             Assert.AreEqual(60, episode.RunTime);
             Assert.AreEqual(2, episode.Image.Count);
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_landscape/1/4388.jpg",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_landscape/1/4388.jpg",
                 episode.Image[ImageType.Medium]);
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/original_untouched/1/4388.jpg",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/1/4388.jpg",
                 episode.Image[ImageType.Original]);
             Assert.AreEqual(
                             "<p>When the residents of Chester's Mill find themselves trapped under a massive transparent dome with no way out, they struggle to survive as resources rapidly dwindle and panic quickly escalates.</p>",
@@ -115,9 +115,9 @@ namespace TvMaze.Tests {
             Assert.AreEqual("America/New_York", season.Network.Country.Timezone);
             Assert.IsNull(season.WebChannel);
             Assert.AreEqual(2, season.Image.Count);
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_portrait/24/60941.jpg",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/24/60941.jpg",
                 season.Image[ImageType.Medium]);
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/original_untouched/24/60941.jpg",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/24/60941.jpg",
                 season.Image[ImageType.Original]);
             Assert.IsEmpty(season.Summary);
             Assert.AreEqual(1, season.Links.Count);
@@ -139,9 +139,15 @@ namespace TvMaze.Tests {
             Assert.AreEqual(1, person.Id);
             Assert.AreEqual("http://www.tvmaze.com/people/1/mike-vogel", person.Url);
             Assert.AreEqual("Mike Vogel", person.Name);
+            Assert.AreEqual("United States", person.Country.Name);
+            Assert.AreEqual("US", person.Country.Code);
+            Assert.AreEqual("America/New_York", person.Country.Timezone);
+            Assert.AreEqual(new DateTime(1979, 07, 17), person.Birthday);
+            Assert.IsNull(person.Deathday);
+            Assert.AreEqual(Gender.Male, person.Gender);
             Assert.IsNotEmpty(person.Image);
             Assert.IsTrue(person.Image.ContainsKey(ImageType.Medium));
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_portrait/0/1815.jpg", person.Image[ImageType.Medium]);
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1815.jpg", person.Image[ImageType.Medium]);
             Assert.IsNull(person.CastCredits);
 
         }
@@ -159,9 +165,15 @@ namespace TvMaze.Tests {
             Assert.AreEqual(1, person.Id);
             Assert.AreEqual("http://www.tvmaze.com/people/1/mike-vogel", person.Url);
             Assert.AreEqual("Mike Vogel", person.Name);
+            Assert.AreEqual("United States", person.Country.Name);
+            Assert.AreEqual("US", person.Country.Code);
+            Assert.AreEqual("America/New_York", person.Country.Timezone);
+            Assert.AreEqual(new DateTime(1979, 07, 17), person.Birthday);
+            Assert.IsNull(person.Deathday);
+            Assert.AreEqual(Gender.Male, person.Gender);
             Assert.IsNotEmpty(person.Image);
             Assert.IsTrue(person.Image.ContainsKey(ImageType.Medium));
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_portrait/0/1815.jpg", person.Image[ImageType.Medium]);
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1815.jpg", person.Image[ImageType.Medium]);
             Assert.IsNotNull(person.CastCredits);
             Assert.AreEqual("http://api.tvmaze.com/shows/1", person.CastCredits[0].Links[LinkType.Show].Href);
 
@@ -188,10 +200,11 @@ namespace TvMaze.Tests {
             Assert.AreEqual("Ended", show.Status);
             Assert.AreEqual(60, show.Runtime);
             Assert.AreEqual(new DateTime(2013, 06, 24), show.Premiered);
+            Assert.AreEqual("http://www.cbs.com/shows/under-the-dome/", show.OfficialSite);
             Assert.AreEqual("22:00", show.Schedule.Time);
             Assert.Contains("Thursday", show.Schedule.Days);
-            Assert.AreEqual(6.6f, show.Rating.Average);
-            Assert.AreEqual(1, show.Weight);
+            Assert.AreEqual(6.5m, show.Rating.Average);
+            Assert.AreEqual(91, show.Weight);
             Assert.AreEqual(2, show.Network.Id);
             Assert.AreEqual("CBS", show.Network.Name);
             Assert.AreEqual("United States", show.Network.Country.Name);
@@ -208,12 +221,12 @@ namespace TvMaze.Tests {
             Assert.AreEqual("tt1553656", show.Externals["imdb"]);
             Assert.IsNotEmpty(show.Image);
             Assert.IsTrue(show.Image.ContainsKey(ImageType.Medium));
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
             Assert.IsTrue(show.Image.ContainsKey(ImageType.Original));
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
-            Assert.AreEqual("<p><em>Under the Dome</em> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
+            Assert.AreEqual("<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
                 show.Summary);
-            Assert.AreEqual(1467986681, show.Updated);
+            Assert.AreEqual(1529612668, show.Updated);
 
             Assert.IsNull(show.Casts);
 
@@ -244,10 +257,11 @@ namespace TvMaze.Tests {
             Assert.AreEqual("Ended", show.Status);
             Assert.AreEqual(60, show.Runtime);
             Assert.AreEqual(new DateTime(2013, 06, 24), show.Premiered);
+            Assert.AreEqual("http://www.cbs.com/shows/under-the-dome/", show.OfficialSite);
             Assert.AreEqual("22:00", show.Schedule.Time);
             Assert.Contains("Thursday", show.Schedule.Days);
-            Assert.AreEqual(6.6f, show.Rating.Average);
-            Assert.AreEqual(2, show.Weight);
+            Assert.AreEqual(6.5m, show.Rating.Average);
+            Assert.AreEqual(91, show.Weight);
             Assert.AreEqual(2, show.Network.Id);
             Assert.AreEqual("CBS", show.Network.Name);
             Assert.AreEqual("United States", show.Network.Country.Name);
@@ -267,9 +281,9 @@ namespace TvMaze.Tests {
             Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
             Assert.IsTrue(show.Image.ContainsKey(ImageType.Original));
             Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
-            Assert.AreEqual("<p><strong>Under the Dome</strong> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+            Assert.AreEqual("<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
                 show.Summary);
-            Assert.AreEqual(1488136720, show.Updated);
+            Assert.AreEqual(1529612668, show.Updated);
 
             Assert.IsNull(show.Casts);
 
@@ -315,10 +329,11 @@ namespace TvMaze.Tests {
             Assert.AreEqual("Ended", show.Status);
             Assert.AreEqual(60, show.Runtime);
             Assert.AreEqual(new DateTime(2013, 06, 24), show.Premiered);
+            Assert.AreEqual("http://www.cbs.com/shows/under-the-dome/", show.OfficialSite);
             Assert.AreEqual("22:00", show.Schedule.Time);
             Assert.Contains("Thursday", show.Schedule.Days);
-            Assert.AreEqual(6.6f, show.Rating.Average);
-            Assert.AreEqual(1, show.Weight);
+            Assert.AreEqual(6.5m, show.Rating.Average);
+            Assert.AreEqual(91, show.Weight);
             Assert.AreEqual(2, show.Network.Id);
             Assert.AreEqual("CBS", show.Network.Name);
             Assert.AreEqual("United States", show.Network.Country.Name);
@@ -335,18 +350,17 @@ namespace TvMaze.Tests {
             Assert.AreEqual("tt1553656", show.Externals["imdb"]);
             Assert.IsNotEmpty(show.Image);
             Assert.IsTrue(show.Image.ContainsKey(ImageType.Medium));
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
             Assert.IsTrue(show.Image.ContainsKey(ImageType.Original));
-            Assert.AreEqual("http://tvmazecdn.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
-            Assert.AreEqual("<p><em>Under the Dome</em> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+            Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
+            Assert.AreEqual("<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
                 show.Summary);
-            Assert.AreEqual(1467986681, show.Updated);
+            Assert.AreEqual(1529612668, show.Updated);
 
             Assert.IsNotNull(show.Casts);
             Assert.IsNotEmpty(show.Casts);
 
         }
-
 
         [Test]
         public void CreateShow_ValidShowJsonDataWithEmbedEpisodes_ShowInstance() {
@@ -369,10 +383,11 @@ namespace TvMaze.Tests {
             Assert.AreEqual("Ended", show.Status);
             Assert.AreEqual(60, show.Runtime);
             Assert.AreEqual(new DateTime(2013, 06, 24), show.Premiered);
+            Assert.AreEqual("http://www.cbs.com/shows/under-the-dome/", show.OfficialSite);
             Assert.AreEqual("22:00", show.Schedule.Time);
             Assert.Contains("Thursday", show.Schedule.Days);
-            Assert.AreEqual(6.6f, show.Rating.Average);
-            Assert.AreEqual(0, show.Weight);
+            Assert.AreEqual(6.5m, show.Rating.Average);
+            Assert.AreEqual(91, show.Weight);
             Assert.AreEqual(2, show.Network.Id);
             Assert.AreEqual("CBS", show.Network.Name);
             Assert.AreEqual("United States", show.Network.Country.Name);
@@ -392,9 +407,9 @@ namespace TvMaze.Tests {
             Assert.AreEqual("http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg", show.Image[ImageType.Medium]);
             Assert.IsTrue(show.Image.ContainsKey(ImageType.Original));
             Assert.AreEqual("http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg", show.Image[ImageType.Original]);
-            Assert.AreEqual("<p><strong>Under the Dome</strong> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+            Assert.AreEqual("<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
                 show.Summary);
-            Assert.AreEqual(1490211618, show.Updated);
+            Assert.AreEqual(1529612668, show.Updated);
 
             Assert.IsNotNull(show.Episodes);
             Assert.IsNotEmpty(show.Episodes);
@@ -414,11 +429,11 @@ namespace TvMaze.Tests {
             Assert.IsNotEmpty(searchResults);
 
             var searchResult = searchResults[1];
-            Assert.AreEqual(3.6249506f, searchResult.Score);
+            Assert.AreEqual(29.037012m, searchResult.Score);
             Assert.IsNotNull(searchResult.Element);
             Assert.IsInstanceOf<Person>(searchResult.Element);
-            Assert.AreEqual(36952, searchResult.Element.Id);
-            Assert.AreEqual("Lauren Sweetser", searchResult.Element.Name);
+            Assert.AreEqual(5028, searchResult.Element.Id);
+            Assert.AreEqual("Lauren German", searchResult.Element.Name);
             
         }
 
@@ -435,7 +450,7 @@ namespace TvMaze.Tests {
             Assert.IsNotEmpty(searchResults);
 
             var searchResult = searchResults[0];
-            Assert.AreEqual(2.030192f, searchResult.Score);
+            Assert.AreEqual(17.15518m, searchResult.Score);
             Assert.IsNotNull(searchResult.Element);
             Assert.IsInstanceOf<Show>(searchResult.Element);
             Assert.AreEqual(139, searchResult.Element.Id);
@@ -460,7 +475,7 @@ namespace TvMaze.Tests {
             var episode = schedule.Episodes[0];
             Assert.IsNotNull(episode);
             Assert.IsNotNull(episode.Show);
-            Assert.AreEqual(905632, episode.Id);
+            Assert.AreEqual(1588998, episode.Id);
 
         }
 
@@ -481,6 +496,8 @@ namespace TvMaze.Tests {
             Assert.AreEqual("Mike Vogel", cast.Person.Name);
             Assert.AreEqual(1, cast.Character.Id);
             Assert.AreEqual("Dale \"Barbie\" Barbara", cast.Character.Name);
+            Assert.IsFalse(cast.Self);
+            Assert.IsFalse(cast.Voice);
         }
 
         [Test]
@@ -518,7 +535,6 @@ namespace TvMaze.Tests {
             Assert.AreEqual("Hungary", alias.Country.Name);
 
         }
-
 
         [Test]
         public void CreateCastCredits_ValidCastCreditJsonData_CastCreditList() {

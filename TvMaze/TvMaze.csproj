@@ -85,6 +85,7 @@
     <Compile Include="Domain\EmbedType.cs" />
     <Compile Include="Domain\Episode.cs" />
     <Compile Include="Domain\ExternalTvShowProvider.cs" />
+    <Compile Include="Domain\Gender.cs" />
     <Compile Include="Domain\ImageType.cs" />
     <Compile Include="Domain\Link.cs" />
     <Compile Include="Domain\LinkType.cs" />

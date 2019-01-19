@@ -2,13 +2,17 @@
     "id": 1,
     "url": "http://www.tvmaze.com/people/1/mike-vogel",
     "name": "Mike Vogel",
-    "image": {
-        "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/0/1815.jpg",
-        "original": "http://tvmazecdn.com/uploads/images/original_untouched/0/1815.jpg"
+    "country": {
+        "name": "United States",
+        "code": "US",
+        "timezone": "America/New_York"
     },
-    "_links": {
-        "self": {
-            "href": "http://api.tvmaze.com/people/1"
-        }
-    }
+    "birthday": "1979-07-17",
+    "deathday": null,
+    "gender": "Male",
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1815.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1815.jpg"
+    },
+    "_links": { "self": { "href": "http://api.tvmaze.com/people/1" } }
 }

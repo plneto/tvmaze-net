@@ -1,29 +1,23 @@
 [
     {
-        "score": 2.030192,
+        "score": 17.15518,
         "show": {
             "id": 139,
             "url": "http://www.tvmaze.com/shows/139/girls",
             "name": "Girls",
             "type": "Scripted",
             "language": "English",
-            "genres": [
-                "Drama",
-                "Romance"
-            ],
-            "status": "Running",
+            "genres": [ "Drama", "Romance" ],
+            "status": "Ended",
             "runtime": 30,
             "premiered": "2012-04-15",
+            "officialSite": "http://www.hbo.com/girls",
             "schedule": {
                 "time": "22:00",
-                "days": [
-                    "Sunday"
-                ]
+                "days": [ "Sunday" ]
             },
-            "rating": {
-                "average": 6.8
-            },
-            "weight": 1,
+            "rating": { "average": 6.7 },
+            "weight": 94,
             "network": {
                 "id": 8,
                 "name": "HBO",
@@ -40,108 +34,39 @@
                 "imdb": "tt1723816"
             },
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/31/78286.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/31/78286.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg"
             },
-            "summary": "<p>Created by and starring Lena Dunham, the Emmy(R)-winning series is a comic look at the assorted humiliations and rare triumphs of a group of girls in their 20s.</p>",
-            "updated": 1466413000,
+            "summary": "<p>This Emmy winning series is a comic look at the assorted humiliations and rare triumphs of a group of girls in their 20s.</p>",
+            "updated": 1543140952,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/139"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/621947"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/139" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1079686" }
             }
         }
     },
     {
-        "score": 1.2671562,
+        "score": 13.262755,
         "show": {
-            "id": 9136,
-            "url": "http://www.tvmaze.com/shows/9136/funny-girls",
-            "name": "Funny Girls",
+            "id": 23542,
+            "url": "http://www.tvmaze.com/shows/23542/good-girls",
+            "name": "Good Girls",
             "type": "Scripted",
             "language": "English",
-            "genres": [
-                "Comedy"
-            ],
+            "genres": [ "Drama", "Comedy", "Crime" ],
             "status": "Running",
-            "runtime": 30,
-            "premiered": "2015-10-23",
+            "runtime": 60,
+            "premiered": "2018-02-26",
+            "officialSite": "https://www.nbc.com/good-girls?nbc=1",
             "schedule": {
                 "time": "22:00",
-                "days": [
-                    "Friday"
-                ]
+                "days": [ "Sunday" ]
             },
-            "rating": {
-                "average": 7
-            },
-            "weight": 1,
+            "rating": { "average": 7.2 },
+            "weight": 95,
             "network": {
-                "id": 292,
-                "name": "TV3",
-                "country": {
-                    "name": "New Zealand",
-                    "code": "NZ",
-                    "timezone": "Pacific/Auckland"
-                }
-            },
-            "webChannel": null,
-            "externals": {
-                "tvrage": null,
-                "thetvdb": 302258,
-                "imdb": null
-            },
-            "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/32/80632.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/32/80632.jpg"
-            },
-            "summary": "<p><strong><em>\"Funny Girls\"</em></strong> is a shiny new sketch comedy show that is funny…and has girls! Featuring fast paced sketches that cover issues such as work, life, relationships and what to do when you're being haunted by a photobombing ghost. Set on a fictional television show where a large group of men produce an all-female sketch show. Rose Matafeo fronts the show alongside Laura Daniel and their friends including Jackie van Beek, who plays the show's producer, Pauline - who definitely has no experience in television.</p>",
-            "updated": 1475497066,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/9136"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/945394"
-                },
-                "nextepisode": {
-                    "href": "http://api.tvmaze.com/episodes/948715"
-                }
-            }
-        }
-    },
-    {
-        "score": 1.2661763,
-        "show": {
-            "id": 525,
-            "url": "http://www.tvmaze.com/shows/525/gilmore-girls",
-            "name": "Gilmore Girls",
-            "type": "Scripted",
-            "language": "English",
-            "genres": [
-                "Drama",
-                "Comedy",
-                "Romance"
-            ],
-            "status": "Ended",
-            "runtime": 60,
-            "premiered": "2000-10-05",
-            "schedule": {
-                "time": "21:00",
-                "days": [
-                    "Tuesday"
-                ]
-            },
-            "rating": {
-                "average": 8.8
-            },
-            "weight": 2,
-            "network": {
-                "id": 5,
-                "name": "The CW",
+                "id": 1,
+                "name": "NBC",
                 "country": {
                     "name": "United States",
                     "code": "US",
@@ -150,54 +75,88 @@
             },
             "webChannel": null,
             "externals": {
-                "tvrage": 3683,
-                "thetvdb": 76568,
-                "imdb": "tt0238784"
+                "tvrage": null,
+                "thetvdb": 328577,
+                "imdb": "tt6474378"
             },
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/4/11308.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/4/11308.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/141/354343.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/141/354343.jpg"
             },
-            "summary": "<p>A drama centering around the relationship between a thirtysomething single mother and her teen daughter living in Stars Hollow, Connecticut.</p>",
-            "updated": 1474249896,
+            "summary": "<p><b>Good Girls</b> follows three \"good girl\" suburban wives and mothers who suddenly find themselves in desperate circumstances and decide to stop playing it safe, and risk everything to take their power back.</p>",
+            "updated": 1545218068,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/525"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/47639"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/23542" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1425058" },
+                "nextepisode": { "href": "http://api.tvmaze.com/episodes/1580115" }
             }
         }
     },
     {
-        "score": 1.2629877,
+        "score": 13.138313,
+        "show": {
+            "id": 33320,
+            "url": "http://www.tvmaze.com/shows/33320/derry-girls",
+            "name": "Derry Girls",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [ "Comedy" ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2018-01-04",
+            "officialSite": "http://www.channel4.com/programmes/derry-girls",
+            "schedule": {
+                "time": "22:00",
+                "days": [ "Thursday" ]
+            },
+            "rating": { "average": 7.3 },
+            "weight": 96,
+            "network": {
+                "id": 45,
+                "name": "Channel 4",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 338903,
+                "imdb": "tt7120662"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/141/353703.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/141/353703.jpg"
+            },
+            "summary": "<p>16-year-old Erin Quinn lives with her uncompromising mother, her long-suffering father and the fearsome ‘Granda Joe', a man whose love for his daughters and granddaughters is surpassed only by his contempt for his son-in-law.</p><p>It's the early 90s, and Erin is used to seeing her country on the nightly news and speaking in acronyms (The IRA, The UDA, The RUC). This is a time of armed police in armoured Land Rovers and British Army check points. But it's also the time of Murder She Wrote, The Cranberries, MJ and Lisa Marie, Doc Martens, bomber jackets, The X Files, Nirvana and Wayne's World. And while The Troubles may hang over her home town, Erin has troubles of her own</p>",
+            "updated": 1518470029,
+            "_links": {
+                "self": { "href": "http://api.tvmaze.com/shows/33320" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1370222" }
+            }
+        }
+    },
+    {
+        "score": 12.817008,
         "show": {
             "id": 6771,
             "url": "http://www.tvmaze.com/shows/6771/the-powerpuff-girls",
             "name": "The Powerpuff Girls",
             "type": "Animation",
             "language": "English",
-            "genres": [
-                "Comedy"
-            ],
+            "genres": [ "Comedy", "Action", "Science-Fiction" ],
             "status": "Running",
             "runtime": 15,
             "premiered": "2016-04-04",
+            "officialSite": "https://www.cartoonnetwork.com/video/powerpuff-girls/index.html",
             "schedule": {
                 "time": "17:30",
-                "days": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                ]
+                "days": [ "Sunday" ]
             },
-            "rating": {
-                "average": 5.5
-            },
-            "weight": 0,
+            "rating": { "average": 5.8 },
+            "weight": 88,
             "network": {
                 "id": 11,
                 "name": "Cartoon Network",
@@ -214,49 +173,39 @@
                 "imdb": "tt4718304"
             },
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/25/64201.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/25/64201.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/60/151357.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/60/151357.jpg"
             },
-            "summary": "<p>The city of Townsville may be a beautiful, bustling metropolis, but \ndon't be fooled! There's evil afoot! And only three things can keep the \nbad guys at bay: Blossom, Bubbles and Buttercup, three super-powered \nlittle girls, known to their fans (and villains everywhere) as <strong><em>\"The \nPowerpuff Girls\"</em></strong>. Juggling school, bedtimes, and beating up giant \nmonsters may be daunting, but together the Powerpuff Girls are up to the\n task. Battling a who's who of evil, they show what it really means to \n\"fight like a girl.\"</p>",
-            "updated": 1475495441,
+            "summary": "<p>The city of Townsville may be a beautiful, bustling metropolis, but don't be fooled! There's evil afoot! And only three things can keep the bad guys at bay: Blossom, Bubbles and Buttercup, three super-powered little girls, known to their fans (and villains everywhere) as <b>The Powerpuff Girls</b>. Juggling school, bedtimes, and beating up giant monsters may be daunting, but together the Powerpuff Girls are up to the task. Battling a who's who of evil, they show what it really means to \"fight like a girl.\"</p>",
+            "updated": 1542806418,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/6771"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/904664"
-                },
-                "nextepisode": {
-                    "href": "http://api.tvmaze.com/episodes/942511"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/6771" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1567719" }
             }
         }
     },
     {
-        "score": 1.2615143,
+        "score": 12.490453,
         "show": {
-            "id": 1591,
-            "url": "http://www.tvmaze.com/shows/1591/funny-girls",
-            "name": "Funny Girls",
-            "type": "Variety",
+            "id": 525,
+            "url": "http://www.tvmaze.com/shows/525/gilmore-girls",
+            "name": "Gilmore Girls",
+            "type": "Scripted",
             "language": "English",
-            "genres": [],
+            "genres": [ "Drama", "Comedy", "Romance" ],
             "status": "Ended",
             "runtime": 60,
-            "premiered": "2015-04-07",
+            "premiered": "2000-10-05",
+            "officialSite": null,
             "schedule": {
                 "time": "21:00",
-                "days": [
-                    "Tuesday"
-                ]
+                "days": [ "Tuesday" ]
             },
-            "rating": {
-                "average": null
-            },
-            "weight": 0,
+            "rating": { "average": 8.7 },
+            "weight": 83,
             "network": {
-                "id": 79,
-                "name": "Oxygen",
+                "id": 5,
+                "name": "The CW",
                 "country": {
                     "name": "United States",
                     "code": "US",
@@ -265,100 +214,133 @@
             },
             "webChannel": null,
             "externals": {
-                "tvrage": 33049,
-                "thetvdb": 294185,
-                "imdb": "tt2884106"
+                "tvrage": 3683,
+                "thetvdb": 76568,
+                "imdb": "tt0238784"
             },
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/12/31653.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/12/31653.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/4/11308.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/4/11308.jpg"
             },
-            "summary": "<p>The series follows the professional and personal lives of six female comics in Los Angeles who are climbing their way to the top of the stand-up ladder. While the comediennes differ in their levels of experience, styles of comedy and ultimate career goals, they share the ambition - and the passion - needed to make it in the City of Dreams. From working multiple jobs, to clashing with parents' expectations, to yet another bad date, the comics provide a fresh, witty perspective on experiences to which young millennial women can relate.</p>",
-            "updated": 1475147412,
+            "summary": "<p><b>Gilmore Girls</b> is a drama centering around the relationship between a thirtysomething single mother and her teen daughter living in Stars Hollow, Connecticut.</p>",
+            "updated": 1547547034,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/1591"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/157051"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/525" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/47639" }
             }
         }
     },
     {
-        "score": 1.2615143,
+        "score": 11.925482,
         "show": {
-            "id": 1073,
-            "url": "http://www.tvmaze.com/shows/1073/bomb-girls",
-            "name": "Bomb Girls",
+            "id": 722,
+            "url": "http://www.tvmaze.com/shows/722/the-golden-girls",
+            "name": "The Golden Girls",
             "type": "Scripted",
             "language": "English",
-            "genres": [
-                "Drama",
-                "War"
-            ],
+            "genres": [ "Drama", "Comedy" ],
             "status": "Ended",
-            "runtime": 60,
-            "premiered": "2012-01-04",
+            "runtime": 30,
+            "premiered": "1985-09-14",
+            "officialSite": null,
             "schedule": {
                 "time": "21:00",
-                "days": []
+                "days": [ "Saturday" ]
             },
-            "rating": {
-                "average": 8.7
-            },
-            "weight": 0,
+            "rating": { "average": 8.2 },
+            "weight": 77,
             "network": {
-                "id": 67,
-                "name": "Global",
+                "id": 1,
+                "name": "NBC",
                 "country": {
-                    "name": "Canada",
-                    "code": "CA",
-                    "timezone": "Canada/Atlantic"
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
                 }
             },
             "webChannel": null,
             "externals": {
-                "tvrage": 30600,
-                "thetvdb": 254378,
-                "imdb": "tt1955311"
+                "tvrage": 5820,
+                "thetvdb": 71292,
+                "imdb": "tt0088526"
             },
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/7/17549.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/7/17549.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/6/15097.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/6/15097.jpg"
             },
-            "summary": "<p>Set in the 1940s, Bomb Girls tells the remarkable stories of the women who risked their lives in a munitions factory buildin<span>g bombs for the Allied forces fighting on the European front. The series delves into the lives of these exceptional women – peers, friends and rivals – who find themselves thrust into new worlds and changed profoundly as they are liberated from their home and social restrictions.</span></p>",
-            "updated": 1474688434,
+            "summary": "<p><b>The Golden Girls</b> follows four South Florida seniors sharing a house, their dreams, and a whole lot of cheesecake. Bright, promiscuous, clueless, and hilarious, these lovely mismatched ladies form the perfect circle of friends.</p>",
+            "updated": 1540017171,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/1073"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/108024"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/722" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/64040" }
             }
         }
     },
     {
-        "score": 1.2612685,
+        "score": 11.585835,
         "show": {
-            "id": 7827,
-            "url": "http://www.tvmaze.com/shows/7827/land-girls",
-            "name": "Land Girls",
+            "id": 32087,
+            "url": "http://www.tvmaze.com/shows/32087/chicken-girls",
+            "name": "Chicken Girls",
             "type": "Scripted",
             "language": "English",
             "genres": [],
+            "status": "Running",
+            "runtime": 16,
+            "premiered": "2017-09-05",
+            "officialSite": "https://www.youtube.com/playlist?list=PLVewHiZp3_LPhqzbcZFmS3iuDm9HymTsy",
+            "schedule": {
+                "time": "18:00",
+                "days": [ "Tuesday" ]
+            },
+            "rating": { "average": null },
+            "weight": 84,
+            "network": null,
+            "webChannel": {
+                "id": 274,
+                "name": "Brat",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/137/344365.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/137/344365.jpg"
+            },
+            "summary": "<p>Rhyme and her friends — known by their 'ship name, \"The Chicken Girls\" — have been dancing together forever. But this year, everything's changing...</p>",
+            "updated": 1546766939,
+            "_links": {
+                "self": { "href": "http://api.tvmaze.com/shows/32087" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1574403" }
+            }
+        }
+    },
+    {
+        "score": 11.5100355,
+        "show": {
+            "id": 27894,
+            "url": "http://www.tvmaze.com/shows/27894/three-girls",
+            "name": "Three Girls",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [ "Drama" ],
             "status": "Ended",
             "runtime": 60,
-            "premiered": "2009-09-07",
+            "premiered": "2017-05-16",
+            "officialSite": "http://www.bbc.co.uk/programmes/b08rgd5n",
             "schedule": {
-                "time": "",
-                "days": []
+                "time": "21:00",
+                "days": [ "Tuesday", "Wednesday", "Thursday" ]
             },
-            "rating": {
-                "average": 8
-            },
-            "weight": 0,
+            "rating": { "average": 9.5 },
+            "weight": 58,
             "network": {
                 "id": 12,
                 "name": "BBC One",
@@ -371,171 +353,91 @@
             "webChannel": null,
             "externals": {
                 "tvrage": null,
-                "thetvdb": 112871,
-                "imdb": "tt1449940"
+                "thetvdb": 327999,
+                "imdb": "tt6835252"
             },
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/28/71862.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/28/71862.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/138/347202.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/138/347202.jpg"
             },
-            "summary": "<p>Follow the lives, loves and highs and lows of four members of the Women's Land Army who are working at the Hoxley Estate during World War II.</p><p><i><strong>Land Girls</strong></i> is a British television period drama series, first broadcast on BBC One on 7 September 2009. <i>Land Girls</i> was created by Roland Moore and commissioned by the BBC to commemorate the 70th anniversary of the outbreak of World War II. The programme was BBC Daytime's first commission of a period drama. <i>Land Girls</i> was filmed in and around the city of Birmingham. The first series features Summer Strallen, Christine Bottomley, Jo Woodcock and Becci Gemmell as four different girls doing their bit for Britain in theWomen's Land Army during the War.</p><p><i>Land Girls</i> won the \"Best Daytime Programme\" at the 2010 Broadcast Awards and in that same year the BBC announced that it had commissioned a second series, comprising five episodes. Woodcock and Gemmell reprised their roles as Bea and Joyce and Seline Hizlimade her debut as new girl, Connie Carter. The second series began airing from 17 January 2011 and two months later BBC Daytime Controller, Liam Keelan, renewed <i>Land Girls</i> for a third series. It began airing from 7 November 2011.</p>",
-            "updated": 1446993938,
+            "summary": "<p><b>Three Girls</b> tells the true story of three of the children who were victims in the 2012 grooming and sex trafficking case in Rochdale.</p><p>Holly is new to Rochdale and keen to make friends and fit in. She finds herself drawn into a world she cannot escape, despite her pleas for help. It's a world that is all too familiar to sexual health worker Sara, who has been recording and reporting cases of child abuse for years.</p>",
+            "updated": 1513509678,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/7827"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/437708"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/27894" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1164038" }
             }
         }
     },
     {
-        "score": 1.261086,
+        "score": 10.930371,
         "show": {
-            "id": 16474,
-            "url": "http://www.tvmaze.com/shows/16474/girls-bravo",
-            "name": "Girls Bravo",
-            "type": "Animation",
-            "language": "Japanese",
-            "genres": [
-                "Drama",
-                "Comedy",
-                "Anime",
-                "Fantasy",
-                "Romance"
-            ],
-            "status": "Ended",
-            "runtime": 25,
-            "premiered": "2004-07-06",
+            "id": 40463,
+            "url": "http://www.tvmaze.com/shows/40463/bad-girls-behind-bars",
+            "name": "Bad Girls Behind Bars",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2019-01-17",
+            "officialSite": "https://www.channel5.com/show/bad-girls-behind-bars/",
             "schedule": {
-                "time": "26:28",
-                "days": [
-                    "Monday"
-                ]
+                "time": "22:00",
+                "days": [ "Thursday" ]
             },
-            "rating": {
-                "average": null
-            },
+            "rating": { "average": null },
             "weight": 0,
             "network": {
-                "id": 131,
-                "name": "Fuji TV",
+                "id": 135,
+                "name": "Channel 5",
                 "country": {
-                    "name": "Japan",
-                    "code": "JP",
-                    "timezone": "Asia/Tokyo"
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
                 }
             },
             "webChannel": null,
             "externals": {
                 "tvrage": null,
-                "thetvdb": 78856,
-                "imdb": "tt0807675"
-            },
-            "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/54/137295.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/54/137295.jpg"
-            },
-            "summary": "<p>Yukinari Sasaki has been bullied by girls ever since he was young. Now that he's a high school student, Yukinari has developed gynaphobia - a severe allergic reaction to girls. Whenever a girl gets close or even talks to him, he breaks out in hives. But changes are in store for Yukinari when an altercation with his neighbour and childhood friend Kirie Kojima knocks him through a portal that connects his bath with the bath of Miharu Sena Kanaka - a girl from the world of Seiren. He is surprised when he does not break out or get nervous when she gets close.</p>",
-            "updated": 1463678910,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/16474"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/753879"
-                }
-            }
-        }
-    },
-    {
-        "score": 1.2610238,
-        "show": {
-            "id": 19923,
-            "url": "http://www.tvmaze.com/shows/19923/the-rolling-girls",
-            "name": "The Rolling Girls",
-            "type": "Animation",
-            "language": "Japanese",
-            "genres": [
-                "Action",
-                "Adventure",
-                "Anime"
-            ],
-            "status": "Ended",
-            "runtime": 25,
-            "premiered": "2015-01-11",
-            "schedule": {
-                "time": "01:58",
-                "days": [
-                    "Sunday"
-                ]
-            },
-            "rating": {
-                "average": null
-            },
-            "weight": 0,
-            "network": {
-                "id": 24,
-                "name": "MBS",
-                "country": {
-                    "name": "Japan",
-                    "code": "JP",
-                    "timezone": "Asia/Tokyo"
-                }
-            },
-            "webChannel": null,
-            "externals": {
-                "tvrage": null,
-                "thetvdb": 284585,
+                "thetvdb": null,
                 "imdb": null
             },
-            "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/70/176006.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/70/176006.jpg"
-            },
-            "summary": "<p>Ten years after the Great Tokyo War, each prefecture in Japan has split up into independent nations. Each nation is ruled by a prophet called \"Mosa\" and an army called \"Mob\" as they start to compete to take over other countries. Four \"Mob\" girls from the Saitama clan, Nozomi, Yukina, Ai, and Chiaya, are ordered by their \"Mosa\" to travel around Japan riding their motorcycles to mediate multiple battles between nations and clans as they emerge.</p>",
-            "updated": 1470838380,
+            "image": null,
+            "summary": "<p>Series offering an intimate look at being a woman in a US jail.</p>",
+            "updated": 1547765403,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/19923"
-                },
-                "previousepisode": {
-                    "href": "http://api.tvmaze.com/episodes/890488"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/40463" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1593190" },
+                "nextepisode": { "href": "http://api.tvmaze.com/episodes/1593191" }
             }
         }
     },
     {
-        "score": 1.2610228,
+        "score": 10.91509,
         "show": {
-            "id": 13826,
-            "url": "http://www.tvmaze.com/shows/13826/soldier-girls",
-            "name": "Soldier Girls",
-            "type": "Scripted",
+            "id": 39888,
+            "url": "http://www.tvmaze.com/shows/39888/curvy-girls-stripped-bare",
+            "name": "Curvy Girls Stripped Bare",
+            "type": "Documentary",
             "language": "English",
-            "genres": [
-                "Drama",
-                "War"
-            ],
-            "status": "In Development",
+            "genres": [],
+            "status": "Running",
             "runtime": 60,
-            "premiered": null,
+            "premiered": "2018-11-28",
+            "officialSite": "http://www.channel5.com/show/curvy-girls-stripped-bare/",
             "schedule": {
-                "time": "",
-                "days": []
+                "time": "22:00",
+                "days": [ "Tuesday", "Wednesday" ]
             },
-            "rating": {
-                "average": null
-            },
-            "weight": 0,
+            "rating": { "average": null },
+            "weight": 99,
             "network": {
-                "id": 8,
-                "name": "HBO",
+                "id": 135,
+                "name": "Channel 5",
                 "country": {
-                    "name": "United States",
-                    "code": "US",
-                    "timezone": "America/New_York"
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
                 }
             },
             "webChannel": null,
@@ -545,15 +447,14 @@
                 "imdb": null
             },
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/47/119176.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/47/119176.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/175/439825.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/175/439825.jpg"
             },
-            "summary": "<p><strong><em>\"Soldier Girls\" </em></strong>is the real-life story of three women who enlist in the National Guard and serve their country during the Afghanistan and Iraq Wars, which leads them to form life-long friendships.</p>",
-            "updated": 1457265359,
+            "summary": "<p>Documentary series going behind the scenes of a plus-size modelling agency.</p>",
+            "updated": 1543445521,
             "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/shows/13826"
-                }
+                "self": { "href": "http://api.tvmaze.com/shows/39888" },
+                "previousepisode": { "href": "http://api.tvmaze.com/episodes/1571797" }
             }
         }
     }

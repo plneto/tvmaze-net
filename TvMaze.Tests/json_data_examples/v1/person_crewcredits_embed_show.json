@@ -1,11 +1,7 @@
 [
     {
         "type": "Co-Executive Producer",
-        "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/2"
-            }
-        },
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/2" } },
         "_embedded": {
             "show": {
                 "id": 2,
@@ -13,27 +9,17 @@
                 "name": "Person of Interest",
                 "type": "Scripted",
                 "language": "English",
-                "genres": [
-                    "Drama",
-                    "Action",
-                    "Crime",
-                    "Science-Fiction",
-                    "Thriller",
-                    "Mystery"
-                ],
+                "genres": [ "Action", "Crime", "Science-Fiction" ],
                 "status": "Ended",
                 "runtime": 60,
                 "premiered": "2011-09-22",
+                "officialSite": "http://www.cbs.com/shows/person_of_interest/",
                 "schedule": {
                     "time": "22:00",
-                    "days": [
-                        "Tuesday"
-                    ]
+                    "days": [ "Tuesday" ]
                 },
-                "rating": {
-                    "average": 9.1
-                },
-                "weight": 4,
+                "rating": { "average": 9 },
+                "weight": 95,
                 "network": {
                     "id": 2,
                     "name": "CBS",
@@ -50,29 +36,21 @@
                     "imdb": "tt1839578"
                 },
                 "image": {
-                    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/55/137682.jpg",
-                    "original": "http://tvmazecdn.com/uploads/images/original_untouched/55/137682.jpg"
+                    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg",
+                    "original": "http://static.tvmaze.com/uploads/images/original_untouched/163/407679.jpg"
                 },
-                "summary": "<p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \"irrelevant.\" They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>",
-                "updated": 1473709038,
+                "summary": "<p>You are being watched. The government has a secret system, a machine that spies on you every hour of every day. I know because I built it. I designed the Machine to detect acts of terror but it sees everything. Violent crimes involving ordinary people. People like you. Crimes the government considered \"irrelevant\". They wouldn't act so I decided I would. But I needed a partner. Someone with the skills to intervene. Hunted by the authorities, we work in secret. You'll never find us. But victim or perpetrator, if your number is up, we'll find you.</p>",
+                "updated": 1546183934,
                 "_links": {
-                    "self": {
-                        "href": "http://api.tvmaze.com/shows/2"
-                    },
-                    "previousepisode": {
-                        "href": "http://api.tvmaze.com/episodes/659372"
-                    }
+                    "self": { "href": "http://api.tvmaze.com/shows/2" },
+                    "previousepisode": { "href": "http://api.tvmaze.com/episodes/659372" }
                 }
             }
         }
     },
     {
         "type": "Consulting Producer",
-        "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/231"
-            }
-        },
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/231" } },
         "_embedded": {
             "show": {
                 "id": 231,
@@ -80,22 +58,17 @@
                 "name": "Vegas",
                 "type": "Scripted",
                 "language": "English",
-                "genres": [
-                    "Drama"
-                ],
+                "genres": [ "Drama" ],
                 "status": "Ended",
                 "runtime": 60,
                 "premiered": "2012-09-25",
+                "officialSite": null,
                 "schedule": {
                     "time": "21:00",
-                    "days": [
-                        "Friday"
-                    ]
+                    "days": [ "Friday" ]
                 },
-                "rating": {
-                    "average": 7.6
-                },
-                "weight": 0,
+                "rating": { "average": 7.6 },
+                "weight": 19,
                 "network": {
                     "id": 2,
                     "name": "CBS",
@@ -112,29 +85,21 @@
                     "imdb": "tt2262383"
                 },
                 "image": {
-                    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/1/3781.jpg",
-                    "original": "http://tvmazecdn.com/uploads/images/original_untouched/1/3781.jpg"
+                    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/1/3781.jpg",
+                    "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/3781.jpg"
                 },
-                "summary": "<p>VEGAS is a drama inspired by the true story of former Las Vegas Sheriff Ralph Lamb, a fourth-generation rancher tasked with bringing order to Las Vegas in the 1960s, a gambling and entertainment mecca emerging from the tumbleweeds. Ralph Lamb wants to be left in peace to run his ranch, but Las Vegas is now swelling with outsiders and corruption which are intruding on his simple life. Recalling Lamb's command as a military police officer during World War II, the Mayor appeals to his sense of duty to look into a murder of a casino worker - and so begins Lamb's clash with Vincent Savino, a ruthless Chicago gangster who plans to make Vegas his own. Assisting Lamb in keeping law and order are his two deputies: his diplomatic, even-keeled brother Jack and his charming but impulsive son Dixon. Ambitious Assistant District Attorney Katherine O'Connell, who grew up on the ranch next to the Lambs, also lends a hand in preserving justice. In Vegas, two powerful men - Lamb and Savino - are engaged in a fierce battle for control of the budding oasis, and for both of them, folding is not an option. </p>",
-                "updated": 1469285683,
+                "summary": "<p><b>Vegas</b> is a drama inspired by the true story of former Las Vegas Sheriff Ralph Lamb, a fourth-generation rancher tasked with bringing order to Las Vegas in the 1960s, a gambling and entertainment mecca emerging from the tumbleweeds. Ralph Lamb wants to be left in peace to run his ranch, but Las Vegas is now swelling with outsiders and corruption which are intruding on his simple life. Recalling Lamb's command as a military police officer during World War II, the Mayor appeals to his sense of duty to look into a murder of a casino worker - and so begins Lamb's clash with Vincent Savino, a ruthless Chicago gangster who plans to make Vegas his own. Assisting Lamb in keeping law and order are his two deputies: his diplomatic, even-keeled brother Jack and his charming but impulsive son Dixon. Ambitious Assistant District Attorney Katherine O'Connell, who grew up on the ranch next to the Lambs, also lends a hand in preserving justice. In Vegas, two powerful men - Lamb and Savino - are engaged in a fierce battle for control of the budding oasis, and for both of them, folding is not an option.</p>",
+                "updated": 1516299724,
                 "_links": {
-                    "self": {
-                        "href": "http://api.tvmaze.com/shows/231"
-                    },
-                    "previousepisode": {
-                        "href": "http://api.tvmaze.com/episodes/14636"
-                    }
+                    "self": { "href": "http://api.tvmaze.com/shows/231" },
+                    "previousepisode": { "href": "http://api.tvmaze.com/episodes/14636" }
                 }
             }
         }
     },
     {
         "type": "Supervising Producer",
-        "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/1153"
-            }
-        },
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/1153" } },
         "_embedded": {
             "show": {
                 "id": 1153,
@@ -142,24 +107,17 @@
                 "name": "New Amsterdam",
                 "type": "Scripted",
                 "language": "English",
-                "genres": [
-                    "Drama",
-                    "Crime",
-                    "Fantasy"
-                ],
+                "genres": [ "Drama", "Crime", "Fantasy" ],
                 "status": "Ended",
                 "runtime": 60,
                 "premiered": "2008-03-04",
+                "officialSite": null,
                 "schedule": {
                     "time": "21:00",
-                    "days": [
-                        "Monday"
-                    ]
+                    "days": [ "Monday" ]
                 },
-                "rating": {
-                    "average": 8.3
-                },
-                "weight": 0,
+                "rating": { "average": 7.9 },
+                "weight": 77,
                 "network": {
                     "id": 4,
                     "name": "FOX",
@@ -176,18 +134,208 @@
                     "imdb": "tt0928414"
                 },
                 "image": {
-                    "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/6/17370.jpg",
-                    "original": "http://tvmazecdn.com/uploads/images/original_untouched/6/17370.jpg"
+                    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/6/17370.jpg",
+                    "original": "http://static.tvmaze.com/uploads/images/original_untouched/6/17370.jpg"
                 },
-                "summary": "<p><strong><em>\"New Amsterdam\"</em></strong> centers on a brilliant New York homicide detective with a profound secret he is immortal. In response to a heroic action, John Amsterdam will not age a day until he finds \"the one.\" He has had many lives as he has roamed the city of New York for the past 400 years searching for his one true love.</p>",
-                "updated": 1463947592,
+                "summary": "<p><b>New Amsterdam</b> centers on a brilliant New York homicide detective with a profound secret he is immortal. In response to a heroic action, John Amsterdam will not age a day until he finds \"the one.\" He has had many lives as he has roamed the city of New York for the past 400 years searching for his one true love.</p>",
+                "updated": 1523221868,
                 "_links": {
-                    "self": {
-                        "href": "http://api.tvmaze.com/shows/1153"
-                    },
-                    "previousepisode": {
-                        "href": "http://api.tvmaze.com/episodes/106311"
+                    "self": { "href": "http://api.tvmaze.com/shows/1153" },
+                    "previousepisode": { "href": "http://api.tvmaze.com/episodes/106311" }
+                }
+            }
+        }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/12607" } },
+        "_embedded": {
+            "show": {
+                "id": 12607,
+                "url": "http://www.tvmaze.com/shows/12607/bull",
+                "name": "Bull",
+                "type": "Scripted",
+                "language": "English",
+                "genres": [ "Drama", "Crime", "Legal" ],
+                "status": "Running",
+                "runtime": 60,
+                "premiered": "2016-09-20",
+                "officialSite": "http://www.cbs.com/shows/bull/",
+                "schedule": {
+                    "time": "22:00",
+                    "days": [ "Monday" ]
+                },
+                "rating": { "average": 7.1 },
+                "weight": 99,
+                "network": {
+                    "id": 2,
+                    "name": "CBS",
+                    "country": {
+                        "name": "United States",
+                        "code": "US",
+                        "timezone": "America/New_York"
                     }
+                },
+                "webChannel": null,
+                "externals": {
+                    "tvrage": null,
+                    "thetvdb": 311945,
+                    "imdb": "tt5827228"
+                },
+                "image": {
+                    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/168/422167.jpg",
+                    "original": "http://static.tvmaze.com/uploads/images/original_untouched/168/422167.jpg"
+                },
+                "summary": "<p><b>Bull </b>stars Michael Weatherly as Dr. Jason Bull in a drama inspired by the early career of Dr. Phil McGraw, the founder of one of the most prolific trial consulting firms of all time. Brilliant, brash and charming, Dr. Bull is the ultimate puppet master as he combines psychology, human intuition and high tech data to learn what makes jurors, attorneys, witnesses and the accused tick. Bull employs an enviable team of experts at Trial Analysis Corporation to shape successful narratives down to the very last detail. They include his quick-witted former brother-in-law, Benny Colón, a lawyer who acts as defense attorney in the company's mock trials; Marissa Morgan, a cutting-edge neurolinguistics expert from the Department of Homeland Security; former NYPD detective Danny James, the firm's tough but relatable investigator; haughty millennial hacker Cable McCrory, who is responsible for gathering cyber intelligence; and Chunk Palmer, a fashion-conscious stylist and former All-American lineman who fine tunes clients' appearances for trial. In high-stakes trials, Bull's combination of remarkable insight into human nature, three Ph.D.'s and a top-notch staff creates winning strategies that tip the scales of justice in his clients' favor.</p>",
+                "updated": 1547589043,
+                "_links": {
+                    "self": { "href": "http://api.tvmaze.com/shows/12607" },
+                    "previousepisode": { "href": "http://api.tvmaze.com/episodes/1576812" },
+                    "nextepisode": { "href": "http://api.tvmaze.com/episodes/1584446" }
+                }
+            }
+        }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/8167" } },
+        "_embedded": {
+            "show": {
+                "id": 8167,
+                "url": "http://www.tvmaze.com/shows/8167/designated-survivor",
+                "name": "Designated Survivor",
+                "type": "Scripted",
+                "language": "English",
+                "genres": [ "Drama", "Thriller" ],
+                "status": "Running",
+                "runtime": 60,
+                "premiered": "2016-09-21",
+                "officialSite": "https://www.netflix.com/title/80113647",
+                "schedule": {
+                    "time": "",
+                    "days": [ "Wednesday" ]
+                },
+                "rating": { "average": 7.6 },
+                "weight": 97,
+                "network": null,
+                "webChannel": {
+                    "id": 1,
+                    "name": "Netflix",
+                    "country": null
+                },
+                "externals": {
+                    "tvrage": null,
+                    "thetvdb": 311876,
+                    "imdb": "tt5296406"
+                },
+                "image": {
+                    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/124/312117.jpg",
+                    "original": "http://static.tvmaze.com/uploads/images/original_untouched/124/312117.jpg"
+                },
+                "summary": "<p>Kiefer Sutherland stars as Tom Kirkman, a lower-level cabinet member who is suddenly appointed President of the United States after a catastrophic attack on the US Capitol during the State of the Union, on the highly anticipated series <b>Designated Survivor</b>. In this dramatic thriller, Kirkman will struggle to keep the country and his own family from falling apart, while navigating the highly-volatile political arena and while leading the search to find who is responsible for the attack.</p>",
+                "updated": 1545567618,
+                "_links": {
+                    "self": { "href": "http://api.tvmaze.com/shows/8167" },
+                    "previousepisode": { "href": "http://api.tvmaze.com/episodes/1445223" }
+                }
+            }
+        }
+    },
+    {
+        "type": "Supervising Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/948" } },
+        "_embedded": {
+            "show": {
+                "id": 948,
+                "url": "http://www.tvmaze.com/shows/948/crossing-jordan",
+                "name": "Crossing Jordan",
+                "type": "Scripted",
+                "language": "English",
+                "genres": [ "Drama", "Crime", "Mystery" ],
+                "status": "Ended",
+                "runtime": 60,
+                "premiered": "2001-09-24",
+                "officialSite": null,
+                "schedule": {
+                    "time": "21:00",
+                    "days": [ "Wednesday" ]
+                },
+                "rating": { "average": 7.9 },
+                "weight": 64,
+                "network": {
+                    "id": 1,
+                    "name": "NBC",
+                    "country": {
+                        "name": "United States",
+                        "code": "US",
+                        "timezone": "America/New_York"
+                    }
+                },
+                "webChannel": null,
+                "externals": {
+                    "tvrage": 3175,
+                    "thetvdb": 74922,
+                    "imdb": "tt0284718"
+                },
+                "image": {
+                    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/6/16239.jpg",
+                    "original": "http://static.tvmaze.com/uploads/images/original_untouched/6/16239.jpg"
+                },
+                "summary": "<p>Brash, stubborn and resourceful medical examiner Jordan Cavanaugh revives her career in Boston, occasionally breaking the rules and ticking off the cops or her co-workers, including a neurotic boss. On the home front, she gets crime-solving help from her retired-cop dad.</p>",
+                "updated": 1542996205,
+                "_links": {
+                    "self": { "href": "http://api.tvmaze.com/shows/948" },
+                    "previousepisode": { "href": "http://api.tvmaze.com/episodes/91977" }
+                }
+            }
+        }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/32819" } },
+        "_embedded": {
+            "show": {
+                "id": 32819,
+                "url": "http://www.tvmaze.com/shows/32819/magnum-pi",
+                "name": "Magnum P.I.",
+                "type": "Scripted",
+                "language": "English",
+                "genres": [ "Drama", "Action", "Crime" ],
+                "status": "Running",
+                "runtime": 60,
+                "premiered": "2018-09-24",
+                "officialSite": "https://www.cbs.com/shows/magnum-pi/",
+                "schedule": {
+                    "time": "21:00",
+                    "days": [ "Monday" ]
+                },
+                "rating": { "average": 6.4 },
+                "weight": 99,
+                "network": {
+                    "id": 2,
+                    "name": "CBS",
+                    "country": {
+                        "name": "United States",
+                        "code": "US",
+                        "timezone": "America/New_York"
+                    }
+                },
+                "webChannel": null,
+                "externals": {
+                    "tvrage": null,
+                    "thetvdb": 350068,
+                    "imdb": "tt7942796"
+                },
+                "image": {
+                    "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/165/412706.jpg",
+                    "original": "http://static.tvmaze.com/uploads/images/original_untouched/165/412706.jpg"
+                },
+                "summary": "<p><b>Magnum P.I.</b> returns with all-new sun-drenched adventures as our hero takes jobs no one else will with the help of fellow vets T.C. Calvin and Rick Wright and the former MI:6 agent with a familiar last name (but now a female) - Higgins. Based on the 1980s series.</p>",
+                "updated": 1547555724,
+                "_links": {
+                    "self": { "href": "http://api.tvmaze.com/shows/32819" },
+                    "previousepisode": { "href": "http://api.tvmaze.com/episodes/1576813" },
+                    "nextepisode": { "href": "http://api.tvmaze.com/episodes/1583811" }
                 }
             }
         }

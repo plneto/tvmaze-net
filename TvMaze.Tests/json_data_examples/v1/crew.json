@@ -5,6 +5,14 @@
             "id": 15,
             "url": "http://www.tvmaze.com/people/15/stephen-king",
             "name": "Stephen King",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1947-09-21",
+            "deathday": null,
+            "gender": "Male",
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1813.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1813.jpg"
@@ -18,6 +26,14 @@
             "id": 15,
             "url": "http://www.tvmaze.com/people/15/stephen-king",
             "name": "Stephen King",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1947-09-21",
+            "deathday": null,
+            "gender": "Male",
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1813.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1813.jpg"
@@ -31,6 +47,14 @@
             "id": 16,
             "url": "http://www.tvmaze.com/people/16/steven-spielberg",
             "name": "Steven Spielberg",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1946-12-18",
+            "deathday": null,
+            "gender": "Male",
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/25/64101.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/25/64101.jpg"
@@ -44,6 +68,14 @@
             "id": 17,
             "url": "http://www.tvmaze.com/people/17/jack-bender",
             "name": "Jack Bender",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1949-09-25",
+            "deathday": null,
+            "gender": "Male",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/17" } }
         }
@@ -54,6 +86,10 @@
             "id": 18,
             "url": "http://www.tvmaze.com/people/18/stacey-snider",
             "name": "Stacey Snider",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/18" } }
         }
@@ -64,6 +100,10 @@
             "id": 19,
             "url": "http://www.tvmaze.com/people/19/neal-baer",
             "name": "Neal Baer",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/17/44163.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/17/44163.jpg"
@@ -77,6 +117,10 @@
             "id": 20,
             "url": "http://www.tvmaze.com/people/20/darryl-frank",
             "name": "Darryl Frank",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/52/132424.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/52/132424.jpg"
@@ -90,6 +134,10 @@
             "id": 21,
             "url": "http://www.tvmaze.com/people/21/justin-falvey",
             "name": "Justin Falvey",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/52/132425.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/52/132425.jpg"
@@ -103,6 +151,14 @@
             "id": 22,
             "url": "http://www.tvmaze.com/people/22/brian-k-vaughan",
             "name": "Brian K. Vaughan",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1976-07-17",
+            "deathday": null,
+            "gender": "Male",
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/96/240765.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/96/240765.jpg"
@@ -116,7 +172,14 @@
             "id": 23,
             "url": "http://www.tvmaze.com/people/23/peter-leto",
             "name": "Peter Leto",
-            "image": null,
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/132/330235.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/132/330235.jpg"
+            },
             "_links": { "self": { "href": "http://api.tvmaze.com/people/23" } }
         }
     },
@@ -126,7 +189,14 @@
             "id": 23,
             "url": "http://www.tvmaze.com/people/23/peter-leto",
             "name": "Peter Leto",
-            "image": null,
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/132/330235.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/132/330235.jpg"
+            },
             "_links": { "self": { "href": "http://api.tvmaze.com/people/23" } }
         }
     },
@@ -136,6 +206,10 @@
             "id": 24,
             "url": "http://www.tvmaze.com/people/24/rick-cleveland",
             "name": "Rick Cleveland",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/24" } }
         }
@@ -146,6 +220,10 @@
             "id": 25,
             "url": "http://www.tvmaze.com/people/25/cathryn-humphris",
             "name": "Cathryn Humphris",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Female",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/25" } }
         }
@@ -156,6 +234,10 @@
             "id": 25,
             "url": "http://www.tvmaze.com/people/25/cathryn-humphris",
             "name": "Cathryn Humphris",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Female",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/25" } }
         }
@@ -166,6 +248,10 @@
             "id": 26,
             "url": "http://www.tvmaze.com/people/26/alexandra-mcnally",
             "name": "Alexandra McNally",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/26" } }
         }
@@ -176,6 +262,10 @@
             "id": 26,
             "url": "http://www.tvmaze.com/people/26/alexandra-mcnally",
             "name": "Alexandra McNally",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/26" } }
         }
@@ -186,6 +276,10 @@
             "id": 27,
             "url": "http://www.tvmaze.com/people/27/soo-hugh",
             "name": "Soo Hugh",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/27" } }
         }
@@ -196,6 +290,10 @@
             "id": 28,
             "url": "http://www.tvmaze.com/people/28/agatha-warren",
             "name": "Agatha Warren",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Female",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/28" } }
         }
@@ -206,6 +304,10 @@
             "id": 29,
             "url": "http://www.tvmaze.com/people/29/daniel-truly",
             "name": "Daniel Truly",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/29" } }
         }
@@ -216,6 +318,10 @@
             "id": 30,
             "url": "http://www.tvmaze.com/people/30/kelly-souders",
             "name": "Kelly Souders",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Female",
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/94/235643.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/94/235643.jpg"
@@ -229,6 +335,10 @@
             "id": 31,
             "url": "http://www.tvmaze.com/people/31/brian-peterson",
             "name": "Brian Peterson",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/31" } }
         }
@@ -239,6 +349,10 @@
             "id": 32,
             "url": "http://www.tvmaze.com/people/32/richard-peter-schroer",
             "name": "Richard Peter Schroer",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/32" } }
         }
@@ -249,6 +363,10 @@
             "id": 33,
             "url": "http://www.tvmaze.com/people/33/darian-heredia",
             "name": "Darian Heredia",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/33" } }
         }
@@ -259,6 +377,10 @@
             "id": 56,
             "url": "http://www.tvmaze.com/people/56/adam-stein",
             "name": "Adam Stein",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/56" } }
         }
@@ -269,6 +391,14 @@
             "id": 66,
             "url": "http://www.tvmaze.com/people/66/peter-calloway",
             "name": "Peter Calloway",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1982-01-01",
+            "deathday": null,
+            "gender": "Male",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/66" } }
         }
@@ -279,6 +409,10 @@
             "id": 29743,
             "url": "http://www.tvmaze.com/people/29743/tim-schlattmann",
             "name": "Tim Schlattmann",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
             "image": null,
             "_links": { "self": { "href": "http://api.tvmaze.com/people/29743" } }
         }
@@ -289,6 +423,10 @@
             "id": 35384,
             "url": "http://www.tvmaze.com/people/35384/bronwyn-garrity",
             "name": "Bronwyn Garrity",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Female",
             "image": {
                 "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/29/72933.jpg",
                 "original": "http://static.tvmaze.com/uploads/images/original_untouched/29/72933.jpg"

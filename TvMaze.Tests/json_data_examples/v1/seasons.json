@@ -18,15 +18,11 @@
         },
         "webChannel": null,
         "image": {
-            "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/24/60941.jpg",
-            "original": "http://tvmazecdn.com/uploads/images/original_untouched/24/60941.jpg"
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60941.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60941.jpg"
         },
         "summary": "",
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/seasons/1"
-            }
-        }
+        "_links": { "self": { "href": "http://api.tvmaze.com/seasons/1" } }
     },
     {
         "id": 2,
@@ -47,15 +43,11 @@
         },
         "webChannel": null,
         "image": {
-            "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/24/60942.jpg",
-            "original": "http://tvmazecdn.com/uploads/images/original_untouched/24/60942.jpg"
+            "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/24/60942.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/24/60942.jpg"
         },
         "summary": "",
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/seasons/2"
-            }
-        }
+        "_links": { "self": { "href": "http://api.tvmaze.com/seasons/2" } }
     },
     {
         "id": 6233,
@@ -77,10 +69,6 @@
         "webChannel": null,
         "image": null,
         "summary": "",
-        "_links": {
-            "self": {
-                "href": "http://api.tvmaze.com/seasons/6233"
-            }
-        }
+        "_links": { "self": { "href": "http://api.tvmaze.com/seasons/6233" } }
     }
 ]

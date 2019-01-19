@@ -2,55 +2,49 @@
     "id": 1,
     "url": "http://www.tvmaze.com/people/1/mike-vogel",
     "name": "Mike Vogel",
+    "country": {
+        "name": "United States",
+        "code": "US",
+        "timezone": "America/New_York"
+    },
+    "birthday": "1979-07-17",
+    "deathday": null,
+    "gender": "Male",
     "image": {
-        "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/0/1815.jpg",
-        "original": "http://tvmazecdn.com/uploads/images/original_untouched/0/1815.jpg"
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1815.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1815.jpg"
     },
-    "_links": {
-        "self": {
-            "href": "http://api.tvmaze.com/people/1"
-        }
-    },
+    "_links": { "self": { "href": "http://api.tvmaze.com/people/1" } },
     "_embedded": {
         "castcredits": [
             {
                 "_links": {
-                    "show": {
-                        "href": "http://api.tvmaze.com/shows/1"
-                    },
-                    "character": {
-                        "href": "http://api.tvmaze.com/characters/1"
-                    }
+                    "show": { "href": "http://api.tvmaze.com/shows/1" },
+                    "character": { "href": "http://api.tvmaze.com/characters/1" }
                 }
             },
             {
                 "_links": {
-                    "show": {
-                        "href": "http://api.tvmaze.com/shows/942"
-                    },
-                    "character": {
-                        "href": "http://api.tvmaze.com/characters/89565"
-                    }
+                    "show": { "href": "http://api.tvmaze.com/shows/942" },
+                    "character": { "href": "http://api.tvmaze.com/characters/89565" }
                 }
             },
             {
                 "_links": {
-                    "show": {
-                        "href": "http://api.tvmaze.com/shows/2942"
-                    },
-                    "character": {
-                        "href": "http://api.tvmaze.com/characters/164406"
-                    }
+                    "show": { "href": "http://api.tvmaze.com/shows/2942" },
+                    "character": { "href": "http://api.tvmaze.com/characters/164406" }
                 }
             },
             {
                 "_links": {
-                    "show": {
-                        "href": "http://api.tvmaze.com/shows/4730"
-                    },
-                    "character": {
-                        "href": "http://api.tvmaze.com/characters/176889"
-                    }
+                    "show": { "href": "http://api.tvmaze.com/shows/4730" },
+                    "character": { "href": "http://api.tvmaze.com/characters/176889" }
+                }
+            },
+            {
+                "_links": {
+                    "show": { "href": "http://api.tvmaze.com/shows/24623" },
+                    "character": { "href": "http://api.tvmaze.com/characters/458714" }
                 }
             }
         ]

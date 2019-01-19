@@ -8,12 +8,13 @@
     "status": "Ended",
     "runtime": 60,
     "premiered": "2013-06-24",
+    "officialSite": "http://www.cbs.com/shows/under-the-dome/",
     "schedule": {
         "time": "22:00",
         "days": [ "Thursday" ]
     },
-    "rating": { "average": 6.6 },
-    "weight": 0,
+    "rating": { "average": 6.5 },
+    "weight": 91,
     "network": {
         "id": 2,
         "name": "CBS",
@@ -33,8 +34,8 @@
         "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg",
         "original": "http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg"
     },
-    "summary": "<p><strong>Under the Dome</strong> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
-    "updated": 1490211618,
+    "summary": "<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+    "updated": 1529612668,
     "_links": {
         "self": { "href": "http://api.tvmaze.com/shows/1" },
         "previousepisode": { "href": "http://api.tvmaze.com/episodes/185054" }
@@ -49,7 +50,7 @@
                 "number": 1,
                 "airdate": "2013-06-24",
                 "airtime": "22:00",
-                "airstamp": "2013-06-24T22:00:00-04:00",
+                "airstamp": "2013-06-25T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4388.jpg",
@@ -66,7 +67,7 @@
                 "number": 2,
                 "airdate": "2013-07-01",
                 "airtime": "22:00",
-                "airstamp": "2013-07-01T22:00:00-04:00",
+                "airstamp": "2013-07-02T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4389.jpg",
@@ -83,7 +84,7 @@
                 "number": 3,
                 "airdate": "2013-07-08",
                 "airtime": "22:00",
-                "airstamp": "2013-07-08T22:00:00-04:00",
+                "airstamp": "2013-07-09T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4390.jpg",
@@ -100,7 +101,7 @@
                 "number": 4,
                 "airdate": "2013-07-15",
                 "airtime": "22:00",
-                "airstamp": "2013-07-15T22:00:00-04:00",
+                "airstamp": "2013-07-16T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4391.jpg",
@@ -117,7 +118,7 @@
                 "number": 5,
                 "airdate": "2013-07-22",
                 "airtime": "22:00",
-                "airstamp": "2013-07-22T22:00:00-04:00",
+                "airstamp": "2013-07-23T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4392.jpg",
@@ -134,7 +135,7 @@
                 "number": 6,
                 "airdate": "2013-07-29",
                 "airtime": "22:00",
-                "airstamp": "2013-07-29T22:00:00-04:00",
+                "airstamp": "2013-07-30T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4393.jpg",
@@ -151,7 +152,7 @@
                 "number": 7,
                 "airdate": "2013-08-05",
                 "airtime": "22:00",
-                "airstamp": "2013-08-05T22:00:00-04:00",
+                "airstamp": "2013-08-06T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4394.jpg",
@@ -168,13 +169,13 @@
                 "number": 8,
                 "airdate": "2013-08-12",
                 "airtime": "22:00",
-                "airstamp": "2013-08-12T22:00:00-04:00",
+                "airstamp": "2013-08-13T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4395.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/4395.jpg"
                 },
-                "summary": "<p>Junior stands up to his father and is shattered when he discovers the truth about his mother's past.  Meanwhile, Julia learns firsthand the powers of the \"mini dome\".</p>",
+                "summary": "<p>Junior stands up to his father and is shattered when he discovers the truth about his mother's past. Meanwhile, Julia learns firsthand the powers of the \"mini dome\".</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/8" } }
             },
             {
@@ -185,7 +186,7 @@
                 "number": 9,
                 "airdate": "2013-08-19",
                 "airtime": "22:00",
-                "airstamp": "2013-08-19T22:00:00-04:00",
+                "airstamp": "2013-08-20T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4396.jpg",
@@ -202,13 +203,13 @@
                 "number": 10,
                 "airdate": "2013-08-26",
                 "airtime": "22:00",
-                "airstamp": "2013-08-26T22:00:00-04:00",
+                "airstamp": "2013-08-27T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4397.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/4397.jpg"
                 },
-                "summary": "<p>Julia uncovers the truth about her husband's disappearance and unravels some of Chester's Mill's darkest secrets.  Meanwhile, Maxine shows Barbie how she plans to take control of the town.</p>",
+                "summary": "<p>Julia uncovers the truth about her husband's disappearance and unravels some of Chester's Mill's darkest secrets. Meanwhile, Maxine shows Barbie how she plans to take control of the town.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/10" } }
             },
             {
@@ -219,13 +220,13 @@
                 "number": 11,
                 "airdate": "2013-09-02",
                 "airtime": "22:00",
-                "airstamp": "2013-09-02T22:00:00-04:00",
+                "airstamp": "2013-09-03T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4398.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/4398.jpg"
                 },
-                "summary": "<p>Big Jim turns the town against Barbie when the truth about his past is revealed.  Meanwhile, Maxine makes it personal when she confronts Barbie's closest ally.</p>",
+                "summary": "<p>Big Jim turns the town against Barbie when the truth about his past is revealed. Meanwhile, Maxine makes it personal when she confronts Barbie's closest ally.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/11" } }
             },
             {
@@ -236,13 +237,13 @@
                 "number": 12,
                 "airdate": "2013-09-09",
                 "airtime": "22:00",
-                "airstamp": "2013-09-09T22:00:00-04:00",
+                "airstamp": "2013-09-10T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4399.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/4399.jpg"
                 },
-                "summary": "<p>While the manhunt for Barbie continues, Big Jim gets the residents of Chester's Mill riled up and the town demands justice for all of Barbie's supposed crimes.  Meanwhile, Joe and Norrie must find a new hiding place for the mini dome.</p>",
+                "summary": "<p>While the manhunt for Barbie continues, Big Jim gets the residents of Chester's Mill riled up and the town demands justice for all of Barbie's supposed crimes. Meanwhile, Joe and Norrie must find a new hiding place for the mini dome.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/12" } }
             },
             {
@@ -253,13 +254,13 @@
                 "number": 13,
                 "airdate": "2013-09-16",
                 "airtime": "22:00",
-                "airstamp": "2013-09-16T22:00:00-04:00",
+                "airstamp": "2013-09-17T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/1/4400.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/4400.jpg"
                 },
-                "summary": "<p>Secrets of the Dome are revealed and Big Jim is determined to put an end to Barbie once and for all.  Meanwhile, Junior, Angie, Joe and Norrie discover who the Monarch is after receiving a shocking visit from a familiar face.</p>",
+                "summary": "<p>Secrets of the Dome are revealed and Big Jim is determined to put an end to Barbie once and for all. Meanwhile, Junior, Angie, Joe and Norrie discover who the Monarch is after receiving a shocking visit from a familiar face.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/13" } }
             },
             {
@@ -270,13 +271,13 @@
                 "number": 1,
                 "airdate": "2014-06-30",
                 "airtime": "22:00",
-                "airstamp": "2014-06-30T22:00:00-04:00",
+                "airstamp": "2014-07-01T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10446.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/4/10446.jpg"
                 },
-                "summary": "<p>Barbie's fate lies in Big Jim's hands, and the Dome presents a new threat when it becomes magnetized.  Meanwhile, Julia seeks out the help of a stranger to save the life of a mysterious girl who may hold clues to origin of the Dome.</p>",
+                "summary": "<p>Barbie's fate lies in Big Jim's hands, and the Dome presents a new threat when it becomes magnetized. Meanwhile, Julia seeks out the help of a stranger to save the life of a mysterious girl who may hold clues to origin of the Dome.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/14" } }
             },
             {
@@ -287,7 +288,7 @@
                 "number": 2,
                 "airdate": "2014-07-07",
                 "airtime": "22:00",
-                "airstamp": "2014-07-07T22:00:00-04:00",
+                "airstamp": "2014-07-08T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10447.jpg",
@@ -304,13 +305,13 @@
                 "number": 3,
                 "airdate": "2014-07-14",
                 "airtime": "22:00",
-                "airstamp": "2014-07-14T22:00:00-04:00",
+                "airstamp": "2014-07-15T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10448.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/4/10448.jpg"
                 },
-                "summary": "<p>When tensions in Chester's Mill continue to rise as resources dwindle, Big Jim holds a census in order to forecast how long the town can continue to exist under the dire conditions.  Meanwhile, a rainstorm brings much-needed water until it changes to acid rain, threatening the lives of everyone it touches. Also, Rebecca and Lyle butt heads over the reasons for the dome's existence.</p>",
+                "summary": "<p>When tensions in Chester's Mill continue to rise as resources dwindle, Big Jim holds a census in order to forecast how long the town can continue to exist under the dire conditions. Meanwhile, a rainstorm brings much-needed water until it changes to acid rain, threatening the lives of everyone it touches. Also, Rebecca and Lyle butt heads over the reasons for the dome's existence.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/16" } }
             },
             {
@@ -321,7 +322,7 @@
                 "number": 4,
                 "airdate": "2014-07-21",
                 "airtime": "22:00",
-                "airstamp": "2014-07-21T22:00:00-04:00",
+                "airstamp": "2014-07-22T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10449.jpg",
@@ -338,13 +339,13 @@
                 "number": 5,
                 "airdate": "2014-07-28",
                 "airtime": "22:00",
-                "airstamp": "2014-07-28T22:00:00-04:00",
+                "airstamp": "2014-07-29T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10450.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/4/10450.jpg"
                 },
-                "summary": "<p>Julia takes over as the leader of Chester's Mill after the town becomes divided in the wake of Big Jim and Rebecca's plans for population control.  Meanwhile, Joe and Norrie help Melanie search for more clues about her identity at the Dome wall.</p>",
+                "summary": "<p>Julia takes over as the leader of Chester's Mill after the town becomes divided in the wake of Big Jim and Rebecca's plans for population control. Meanwhile, Joe and Norrie help Melanie search for more clues about her identity at the Dome wall.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/18" } }
             },
             {
@@ -355,7 +356,7 @@
                 "number": 6,
                 "airdate": "2014-08-04",
                 "airtime": "22:00",
-                "airstamp": "2014-08-04T22:00:00-04:00",
+                "airstamp": "2014-08-05T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10451.jpg",
@@ -372,7 +373,7 @@
                 "number": 7,
                 "airdate": "2014-08-11",
                 "airtime": "22:00",
-                "airstamp": "2014-08-11T22:00:00-04:00",
+                "airstamp": "2014-08-12T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10452.jpg",
@@ -389,7 +390,7 @@
                 "number": 8,
                 "airdate": "2014-08-18",
                 "airtime": "22:00",
-                "airstamp": "2014-08-18T22:00:00-04:00",
+                "airstamp": "2014-08-19T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10453.jpg",
@@ -406,7 +407,7 @@
                 "number": 9,
                 "airdate": "2014-08-25",
                 "airtime": "22:00",
-                "airstamp": "2014-08-25T22:00:00-04:00",
+                "airstamp": "2014-08-26T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10454.jpg",
@@ -423,13 +424,13 @@
                 "number": 10,
                 "airdate": "2014-09-01",
                 "airtime": "22:00",
-                "airstamp": "2014-09-01T22:00:00-04:00",
+                "airstamp": "2014-09-02T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10455.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/4/10455.jpg"
                 },
-                "summary": "<p>Big Jim finally learns the shocking truth about what really happened to his wife, Pauline, when they are reunited.  Meanwhile, climate change poses a new threat to Chester's Mill.</p>",
+                "summary": "<p>Big Jim finally learns the shocking truth about what really happened to his wife, Pauline, when they are reunited. Meanwhile, climate change poses a new threat to Chester's Mill.</p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/23" } }
             },
             {
@@ -440,7 +441,7 @@
                 "number": 11,
                 "airdate": "2014-09-08",
                 "airtime": "22:00",
-                "airstamp": "2014-09-08T22:00:00-04:00",
+                "airstamp": "2014-09-09T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10456.jpg",
@@ -457,7 +458,7 @@
                 "number": 12,
                 "airdate": "2014-09-15",
                 "airtime": "22:00",
-                "airstamp": "2014-09-15T22:00:00-04:00",
+                "airstamp": "2014-09-16T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10457.jpg",
@@ -474,7 +475,7 @@
                 "number": 13,
                 "airdate": "2014-09-22",
                 "airtime": "22:00",
-                "airstamp": "2014-09-22T22:00:00-04:00",
+                "airstamp": "2014-09-23T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/4/10458.jpg",
@@ -491,7 +492,7 @@
                 "number": 1,
                 "airdate": "2015-06-25",
                 "airtime": "21:00",
-                "airstamp": "2015-06-25T21:00:00-04:00",
+                "airstamp": "2015-06-26T02:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/12/31233.jpg",
@@ -508,7 +509,7 @@
                 "number": 2,
                 "airdate": "2015-06-25",
                 "airtime": "22:00",
-                "airstamp": "2015-06-25T22:00:00-04:00",
+                "airstamp": "2015-06-26T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/12/31234.jpg",
@@ -525,13 +526,13 @@
                 "number": 3,
                 "airdate": "2015-07-02",
                 "airtime": "22:00",
-                "airstamp": "2015-07-02T22:00:00-04:00",
+                "airstamp": "2015-07-03T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/12/31939.jpg",
                     "original": "http://static.tvmaze.com/uploads/images/original_untouched/12/31939.jpg"
                 },
-                "summary": "<p>The residents of Chester's Mill try to move on with their lives in the aftermath of their mysterious experience in the tunnels beneath town. Meanwhile, Big Jim suspects new residents Christine and Eva are keeping secrets concerning the Dome.</p><p><br /><br /></p>",
+                "summary": "<p>The residents of Chester's Mill try to move on with their lives in the aftermath of their mysterious experience in the tunnels beneath town. Meanwhile, Big Jim suspects new residents Christine and Eva are keeping secrets concerning the Dome.</p><p><br><br></p>",
                 "_links": { "self": { "href": "http://api.tvmaze.com/episodes/151645" } }
             },
             {
@@ -542,7 +543,7 @@
                 "number": 4,
                 "airdate": "2015-07-09",
                 "airtime": "22:00",
-                "airstamp": "2015-07-09T22:00:00-04:00",
+                "airstamp": "2015-07-10T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/12/32457.jpg",
@@ -559,7 +560,7 @@
                 "number": 5,
                 "airdate": "2015-07-16",
                 "airtime": "22:00",
-                "airstamp": "2015-07-16T22:00:00-04:00",
+                "airstamp": "2015-07-17T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/13/33494.jpg",
@@ -576,7 +577,7 @@
                 "number": 6,
                 "airdate": "2015-07-23",
                 "airtime": "22:00",
-                "airstamp": "2015-07-23T22:00:00-04:00",
+                "airstamp": "2015-07-24T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/13/34493.jpg",
@@ -593,7 +594,7 @@
                 "number": 7,
                 "airdate": "2015-07-30",
                 "airtime": "22:00",
-                "airstamp": "2015-07-30T22:00:00-04:00",
+                "airstamp": "2015-07-31T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/13/34948.jpg",
@@ -610,7 +611,7 @@
                 "number": 8,
                 "airdate": "2015-08-06",
                 "airtime": "22:00",
-                "airstamp": "2015-08-06T22:00:00-04:00",
+                "airstamp": "2015-08-07T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/14/36036.jpg",
@@ -627,7 +628,7 @@
                 "number": 9,
                 "airdate": "2015-08-13",
                 "airtime": "22:00",
-                "airstamp": "2015-08-13T22:00:00-04:00",
+                "airstamp": "2015-08-14T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/14/37358.jpg",
@@ -644,7 +645,7 @@
                 "number": 10,
                 "airdate": "2015-08-20",
                 "airtime": "22:00",
-                "airstamp": "2015-08-20T22:00:00-04:00",
+                "airstamp": "2015-08-21T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/15/39057.jpg",
@@ -661,7 +662,7 @@
                 "number": 11,
                 "airdate": "2015-08-27",
                 "airtime": "22:00",
-                "airstamp": "2015-08-27T22:00:00-04:00",
+                "airstamp": "2015-08-28T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/16/40250.jpg",
@@ -678,7 +679,7 @@
                 "number": 12,
                 "airdate": "2015-09-03",
                 "airtime": "22:00",
-                "airstamp": "2015-09-03T22:00:00-04:00",
+                "airstamp": "2015-09-04T03:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/16/41932.jpg",
@@ -695,7 +696,7 @@
                 "number": 13,
                 "airdate": "2015-09-10",
                 "airtime": "22:00",
-                "airstamp": "2015-09-10T22:00:00-04:00",
+                "airstamp": "2015-09-11T02:00:00+00:00",
                 "runtime": 60,
                 "image": {
                     "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/17/43622.jpg",

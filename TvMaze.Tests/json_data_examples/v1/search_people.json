@@ -1,148 +1,177 @@
 [
     {
-        "score": 3.6249506,
+        "score": 34.66676,
         "person": {
-            "id": 123897,
-            "url": "http://www.tvmaze.com/people/123897/lauren-biller",
-            "name": "Lauren Biller",
-            "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/123897"
-                }
-            }
-        }
-    },
-    {
-        "score": 3.6249506,
-        "person": {
-            "id": 36952,
-            "url": "http://www.tvmaze.com/people/36952/lauren-sweetser",
-            "name": "Lauren Sweetser",
-            "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/36952"
-                }
-            }
-        }
-    },
-    {
-        "score": 3.6249506,
-        "person": {
-            "id": 126151,
-            "url": "http://www.tvmaze.com/people/126151/lauren-alaina",
-            "name": "Lauren Alaina",
-            "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/126151"
-                }
-            }
-        }
-    },
-    {
-        "score": 3.6249506,
-        "person": {
-            "id": 38737,
-            "url": "http://www.tvmaze.com/people/38737/lauren-myers",
-            "name": "Lauren Myers",
-            "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/25/64025.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/25/64025.jpg"
+            "id": 172658,
+            "url": "http://www.tvmaze.com/people/172658/lauren-bush-lauren",
+            "name": "Lauren Bush Lauren",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
             },
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/38737"
-                }
-            }
-        }
-    },
-    {
-        "score": 3.6249506,
-        "person": {
-            "id": 66106,
-            "url": "http://www.tvmaze.com/people/66106/lauren-platt",
-            "name": "Lauren Platt",
+            "birthday": "1984-06-25",
+            "deathday": null,
+            "gender": "Female",
             "image": {
-                "medium": "http://tvmazecdn.com/uploads/images/medium_portrait/38/95674.jpg",
-                "original": "http://tvmazecdn.com/uploads/images/original_untouched/38/95674.jpg"
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/108/272410.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/108/272410.jpg"
             },
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/66106"
-                }
-            }
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/172658" } }
         }
     },
     {
-        "score": 3.6249506,
+        "score": 29.037012,
         "person": {
-            "id": 117908,
-            "url": "http://www.tvmaze.com/people/117908/lauren-conrad",
-            "name": "Lauren Conrad",
-            "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/117908"
-                }
-            }
+            "id": 5028,
+            "url": "http://www.tvmaze.com/people/5028/lauren-german",
+            "name": "Lauren German",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1978-11-29",
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/42/106488.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/42/106488.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/5028" } }
         }
     },
     {
-        "score": 3.6249506,
+        "score": 29.037012,
         "person": {
-            "id": 100225,
-            "url": "http://www.tvmaze.com/people/100225/lauren-houseman",
-            "name": "Lauren Houseman",
-            "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/100225"
-                }
-            }
+            "id": 8140,
+            "url": "http://www.tvmaze.com/people/8140/lauren-weedman",
+            "name": "Lauren Weedman",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1969-03-05",
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/84/211953.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/84/211953.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/8140" } }
         }
     },
     {
-        "score": 3.6249506,
+        "score": 29.037012,
         "person": {
-            "id": 69148,
-            "url": "http://www.tvmaze.com/people/69148/lauren-roche",
-            "name": "Lauren Roche",
-            "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/69148"
-                }
-            }
+            "id": 12519,
+            "url": "http://www.tvmaze.com/people/12519/lauren-stamile",
+            "name": "Lauren Stamile",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1976-09-12",
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/1/3422.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/3422.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/12519" } }
         }
     },
     {
-        "score": 3.6249506,
+        "score": 29.037012,
         "person": {
-            "id": 5308,
-            "url": "http://www.tvmaze.com/people/5308/val-lauren",
-            "name": "Val Lauren",
+            "id": 13040,
+            "url": "http://www.tvmaze.com/people/13040/lauren-skirvin",
+            "name": "Lauren Skirvin",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/5308"
-                }
-            }
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/13040" } }
         }
     },
     {
-        "score": 3.6249506,
+        "score": 29.037012,
         "person": {
-            "id": 83706,
-            "url": "http://www.tvmaze.com/people/83706/lauren-certo",
-            "name": "Lauren Certo",
+            "id": 13549,
+            "url": "http://www.tvmaze.com/people/13549/lauren-mcneely",
+            "name": "Lauren McNeely",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
             "image": null,
-            "_links": {
-                "self": {
-                    "href": "http://api.tvmaze.com/people/83706"
-                }
-            }
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/13549" } }
+        }
+    },
+    {
+        "score": 29.037012,
+        "person": {
+            "id": 16155,
+            "url": "http://www.tvmaze.com/people/16155/lauren-liem",
+            "name": "Lauren Liem",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/16155" } }
+        }
+    },
+    {
+        "score": 29.037012,
+        "person": {
+            "id": 16360,
+            "url": "http://www.tvmaze.com/people/16360/lauren-melendez",
+            "name": "Lauren Melendez",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1982-03-15",
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/152/381182.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/152/381182.jpg"
+            },
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/16360" } }
+        }
+    },
+    {
+        "score": 29.037012,
+        "person": {
+            "id": 17659,
+            "url": "http://www.tvmaze.com/people/17659/lauren-kelly",
+            "name": "Lauren Kelly",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/17659" } }
+        }
+    },
+    {
+        "score": 29.037012,
+        "person": {
+            "id": 18832,
+            "url": "http://www.tvmaze.com/people/18832/lauren-sharpe",
+            "name": "Lauren Sharpe",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
+            "image": null,
+            "_links": { "self": { "href": "http://api.tvmaze.com/people/18832" } }
         }
     }
 ]

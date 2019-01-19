@@ -16,6 +16,7 @@ namespace TvMaze.Domain {
         public string Status { get; set; }
         public int? Runtime { get; set; }
         public DateTime? Premiered { get; set; }
+        public string OfficialSite { get; set; }
         public ShowSchedule Schedule { get; set; }
         public Rating Rating { get; set; }
         public int Weight { get; set; }

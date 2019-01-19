@@ -1,26 +1,30 @@
 [
     {
         "type": "Co-Executive Producer",
-        "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/2"
-            }
-        }
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/2" } }
     },
     {
         "type": "Consulting Producer",
-        "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/231"
-            }
-        }
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/231" } }
     },
     {
         "type": "Supervising Producer",
-        "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/1153"
-            }
-        }
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/1153" } }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/12607" } }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/8167" } }
+    },
+    {
+        "type": "Supervising Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/948" } }
+    },
+    {
+        "type": "Co-Executive Producer",
+        "_links": { "show": { "href": "http://api.tvmaze.com/shows/32819" } }
     }
 ]

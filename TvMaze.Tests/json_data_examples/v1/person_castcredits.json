@@ -1,42 +1,32 @@
 [
     {
         "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/1"
-            },
-            "character": {
-                "href": "http://api.tvmaze.com/characters/1"
-            }
+            "show": { "href": "http://api.tvmaze.com/shows/1" },
+            "character": { "href": "http://api.tvmaze.com/characters/1" }
         }
     },
     {
         "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/942"
-            },
-            "character": {
-                "href": "http://api.tvmaze.com/characters/89565"
-            }
+            "show": { "href": "http://api.tvmaze.com/shows/942" },
+            "character": { "href": "http://api.tvmaze.com/characters/89565" }
         }
     },
     {
         "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/2942"
-            },
-            "character": {
-                "href": "http://api.tvmaze.com/characters/164406"
-            }
+            "show": { "href": "http://api.tvmaze.com/shows/2942" },
+            "character": { "href": "http://api.tvmaze.com/characters/164406" }
         }
     },
     {
         "_links": {
-            "show": {
-                "href": "http://api.tvmaze.com/shows/4730"
-            },
-            "character": {
-                "href": "http://api.tvmaze.com/characters/176889"
-            }
+            "show": { "href": "http://api.tvmaze.com/shows/4730" },
+            "character": { "href": "http://api.tvmaze.com/characters/176889" }
+        }
+    },
+    {
+        "_links": {
+            "show": { "href": "http://api.tvmaze.com/shows/24623" },
+            "character": { "href": "http://api.tvmaze.com/characters/458714" }
         }
     }
 ]
