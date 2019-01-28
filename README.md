@@ -1,4 +1,6 @@
-# tvmaze-net
+# TvMaze
+[![TvMaze on nuget.org](https://img.shields.io/nuget/v/TvMaze.svg)](https://www.nuget.org/packages/TvMaze) [![TvMaze on fuget.org](https://www.fuget.org/packages/TvMaze/badge.svg)](https://www.fuget.org/packages/TvMaze)
+
 The TvMaze .NET Client
 
 ## CI build status
